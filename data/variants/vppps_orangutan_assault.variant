@@ -1,0 +1,43 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 4,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "vppps_orangutan",
+    "hullMods": [],
+    "quality": 0.25,
+    "variantId": "vppps_orangutan_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 007": "miningblaster",
+                "WS 006": "miningblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "flak",
+                "WS 003": "flak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "lightdualmg",
+                "WS 001": "lightdualmg"
+            }
+        }
+    ]
+}

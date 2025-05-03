@@ -1,0 +1,23 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vppps_buffalo_mk4",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "vppps_buffalo_mk4_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "pilum",
+                "WS 004": "swarmer",
+                "WS 003": "pilum",
+                "WS 001": "pdlaser",
+                "WS 002": "pilum"
+            }
+        }
+    ]
+}

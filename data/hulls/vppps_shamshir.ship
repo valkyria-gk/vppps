@@ -18,9 +18,8 @@
     "viewOffset": 0,
     "builtInMods": [
         "advancedcore",
-        "ballistic_rangefinder",
         "ecm",
-        "high_scatter_amp",
+        "vppps_particle_accelerator",
         "solar_shielding"
     ],
     "builtInWings": [],

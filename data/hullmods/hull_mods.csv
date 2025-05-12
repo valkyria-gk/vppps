@@ -1,0 +1,2 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Particle Accelerator,vppps_particle_accelerator,,,,,,,,TRUE,,0,0,0,0,xyz.vkgk.vppps.hullmods.ParticleAccelerator,,,,graphics/hullmods/vppps_particle_accelerator.png

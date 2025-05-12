@@ -1,0 +1,2 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+medusashead,"Medusa's Head HQ",90,60,,6,,,"military, unraidable, tactical_bombardment, structure, codex_unlockable",,graphics/icons/industry/lions_guard.png,xyz.vkgk.vppps.campaign.econ.MedusasHeadHQ,,2650,

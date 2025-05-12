@@ -1,0 +1,77 @@
+{
+    "starSystem": "lilith",
+    "markets": [
+        {
+            "entities":["sekhmet", "lilith_citadel"],
+			"faction":"persean_free_domain",
+			"size":6,
+            "freePort":true,
+			"startingConditions":[
+                "toxic_atmosphere",
+                "ore_rich",
+				"rare_ore_ultrarich",
+                "volatiles_diffuse",
+                "organics_trace",
+				"population_6"
+			],
+			"industries":[
+                "population",
+				"spaceport",
+                "mining",
+                ["refining"],
+				["orbitalworks"],
+                "highcommand",
+                "medusashead",
+                "heavybatteries",
+                "starfortress_high"
+			]
+        },
+        {
+            "entities": ["lem", "lem_station"],
+            "faction": "persean_free_domain",
+            "size":5,
+            "freePort":true,
+            "startingConditions":[
+                "habitable",
+                "water_surface",
+                "inimical_biosphere",
+                "ore_sparse",
+                "organics_plentiful",
+                "luddic_majority"
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "aquaculture",
+                "lightindustry",
+                "heavybatteries",
+                "patrolhq",
+                "orbitalstation"
+            ]
+        },
+        {
+            "entities":["strozywei"],
+            "faction":"persean_free_domain",
+            "size":5,
+            "freePort":true,
+            "startingConditions":[
+                "habitable",
+                "farmland_adequate",
+                "ore_sparse",
+				"organics_abundant",
+				"population_5",
+                "luddic_majority",
+				"cold"
+            ],
+            "industries":[
+                "population",
+                "spaceport",
+                "farming",
+				"lightindustry",
+                "heavybatteries",
+                "patrolhq",
+                "orbitalstation_high"
+            ]
+        }
+    ]
+}

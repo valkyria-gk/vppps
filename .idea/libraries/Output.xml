@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Output">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jars/xyz.vkgk.vppps.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

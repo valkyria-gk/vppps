@@ -1,0 +1,54 @@
+{
+    "displayName": "Salvo",
+    "fluxCapacitors": 10,
+    "fluxVents": 7,
+    "goalVariant": false,
+    "hullId": "vppps_bishop",
+    "hullMods": [
+        "recovery_shuttles",
+        "ballistic_rangefinder"
+    ],
+    "quality": 0.15000000000000002,
+    "variantId": "vppps_bishop_salvager",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "miningblaster",
+                "WS 004": "mininglaser"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "pilum",
+                "WS 001": "pilum"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "heatseeker",
+                "WS 003": "heatseeker"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "devastator",
+                "WS 009": "flak",
+                "WS 010": "flak",
+                "WS 007": "lightmg",
+                "WS 008": "lightmg"
+            }
+        }
+    ],
+    "wings": [
+        "piranha_wing",
+        "piranha_wing"
+    ]
+}

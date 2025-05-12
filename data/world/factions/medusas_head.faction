@@ -1,0 +1,280 @@
+{
+  "id": "medusas_head",
+
+  "color": [252, 186, 3, 255],
+  "baseUIColor":[36, 48, 31,255],
+  "secondaryUIColor":[252, 186, 3,255],
+  "secondarySegments":3,
+
+  "displayName": "Medusa's Head",
+  "displayNameWithArticle": "the Head of Medusa",
+  "showInIntelTab": false,
+
+  "logo": "graphics/factions/neutral.png",
+  "crest": "graphics/factions/crest_neutral.png",
+
+  "shipNamePrefix": "",
+  "shipNameSources": {
+    "SPACE": 1,
+    "GENERAL": 1,
+    "BRITISH_NAVY": 1,
+    "PIRATES": 1,
+    "NORSE": 1,
+    "PERSIAN": 1,
+    "BEASTS": 1,
+    "JAPANESE": 1,
+    "EGYPTIAN": 1,
+    "CELTIC": 1,
+    "GERMANIC": 1,
+    "REVOLUTIONARY": 1
+  },
+  "names": {
+    "world": 1,
+    "future": 1,
+    "myth": 1,
+    "fringe": 1,
+    "modern": 1,
+    "luddic": 1,
+    "pirate": 1
+  },
+
+  "portraits": {
+    "standard_male": [
+      "graphics/portraits/portrait_pirate02.png",
+      "graphics/portraits/portrait_pirate03.png",
+      "graphics/portraits/portrait_pirate07.png",
+      "graphics/portraits/portrait_pirate10.png",
+      "graphics/portraits/portrait_pirate11.png",
+
+      "graphics/portraits/portrait_pirate12.png",
+      "graphics/portraits/portrait_pirate13.png",
+      "graphics/portraits/portrait_pirate14.png",
+      "graphics/portraits/portrait_pirate15.png",
+      "graphics/portraits/portrait_pirate19.png",
+
+      "graphics/portraits/portrait_pirate20.png",
+
+      "graphics/portraits/portrait_mercenary01.png",
+      "graphics/portraits/portrait_mercenary03.png",
+
+      "graphics/portraits/portrait_mercenary04.png",
+      "graphics/portraits/portrait_mercenary06.png",
+      "graphics/portraits/portrait12.png",
+      "graphics/portraits/portrait15.png",
+      "graphics/portraits/portrait17.png",
+      "graphics/portraits/portrait18.png",
+      "graphics/portraits/portrait20.png",
+      "graphics/portraits/portrait33.png",
+      "graphics/portraits/portrait36.png",
+      "graphics/portraits/portrait40.png",
+
+      "graphics/portraits/portrait_luddic00.png",
+      "graphics/portraits/portrait_luddic02.png",
+      "graphics/portraits/portrait_luddic04.png",
+      "graphics/portraits/portrait_luddic05.png",
+      "graphics/portraits/portrait_luddic06.png",
+      "graphics/portraits/portrait_luddic09.png",
+      "graphics/portraits/portrait_luddic12.png",
+      "graphics/portraits/portrait_luddic13.png",
+      "graphics/portraits/portrait_luddic15.png"
+    ],
+    "standard_female": [
+      "graphics/portraits/portrait_pirate01.png",
+      "graphics/portraits/portrait_pirate04.png",
+      "graphics/portraits/portrait_pirate05.png",
+      "graphics/portraits/portrait_pirate06.png",
+      "graphics/portraits/portrait_pirate08.png",
+
+      "graphics/portraits/portrait_pirate09.png",
+      "graphics/portraits/portrait_pirate16.png",
+      "graphics/portraits/portrait_pirate17.png",
+      "graphics/portraits/portrait_pirate18.png",
+      "graphics/portraits/portrait_pirate21.png",
+      "graphics/portraits/portrait_pirate22.png",
+
+      "graphics/portraits/portrait_mercenary02.png",
+      "graphics/portraits/portrait_mercenary05.png",
+      "graphics/portraits/portrait_mercenary07.png",
+      "graphics/portraits/portrait_mercenary08.png",
+
+      "graphics/portraits/portrait16.png",
+      "graphics/portraits/portrait21.png",
+      "graphics/portraits/portrait22.png",
+      "graphics/portraits/portrait27.png",
+      "graphics/portraits/portrait28.png",
+      "graphics/portraits/portrait29.png",
+      "graphics/portraits/portrait37.png",
+      "graphics/portraits/portrait39.png",
+      "graphics/portraits/portrait42.png",
+
+      "graphics/portraits/portrait_luddic01.png",
+      "graphics/portraits/portrait_luddic03.png",
+      "graphics/portraits/portrait_luddic07.png",
+      "graphics/portraits/portrait_luddic08.png",
+      "graphics/portraits/portrait_luddic10.png",
+      "graphics/portraits/portrait_luddic11.png",
+      "graphics/portraits/portrait_luddic14.png",
+      "graphics/portraits/portrait_luddic16.png"
+    ]
+  },
+
+  "shipsWhenImporting": {
+    "tags": [
+      "base_bp",
+      "pirate_bp",
+      "pirates",
+      "LP_bp",
+      "luddic_path",
+      "standard",
+      "ind",
+      "independent"
+    ],
+    "hulls": [
+      "enforcer",
+      "hammerhead",
+      "manticore_luddic_path",
+      "eradicator",
+      "sunder",
+      "prometheus2"
+    ]
+  },
+  "knownShips": {
+    "tags": [
+      "base_bp",
+      "pirate_bp",
+      "pirates",
+      "LP_bp",
+      "luddic_path",
+      "standard",
+      "ind",
+      "independent"
+    ],
+    "hulls": [
+      "enforcer",
+      "hammerhead",
+      "manticore_luddic_path",
+      "eradicator",
+      "sunder",
+      "prometheus2"
+    ]
+  },
+
+  "priorityShips": {
+    "tags": [],
+    "hulls": []
+  },
+  "knownFighters": {
+    "tags": [
+      "base_bp",
+      "pirate_bp",
+      "pirates",
+      "LP_bp",
+      "luddic_path",
+      "standard",
+      "ind",
+      "independent"
+    ],
+    "fighters": [
+      "broadsword_wing",
+      "warthog_wing",
+      "hoplon_wing",
+      "piranha_wing",
+      "perdition_wing",
+      "talon_wing"
+    ]
+  },
+  "priorityFighters": {
+    "tags": [],
+    "fighters": [
+      "broadsword_wing",
+      "warthog_wing",
+      "hoplon_wing",
+      "piranha_wing",
+      "perdition_wing",
+      "talon_wing"
+    ]
+  },
+  "knownWeapons": {
+    "tags": [
+      "base_bp",
+      "lowtech_bp",
+      "midline_bp",
+      "missile_bp",
+      "hightech_bp",
+      "LP_bp",
+      "luddic_path",
+      "pirate_bp",
+      "pirates",
+      "ind",
+      "independent"
+    ],
+    "weapons": ["jackhammer", "hurricane", "squall", "locust", "irautolance"]
+  },
+  "priorityWeapons": {
+    "tags": [],
+    "weapons": []
+  },
+  "knownHullMods": {
+    "tags": [
+      "base_bp",
+      "pirate_bp",
+      "pirates",
+      "LP_bp",
+      "luddic_path",
+      "standard",
+      "ind",
+      "independent"
+    ],
+    "hullMods": [
+      "turretgyros",
+      "armoredweapons",
+      "augmentedengines",
+      "converted_hangar",
+      "expanded_deck_crew",
+      "magazines",
+      "missleracks",
+      "frontshield",
+      "heavyarmor",
+      "insulatedengine",
+      "fluxbreakers"
+    ]
+  },
+
+  "factionDoctrine": {
+    "warships": 5,
+    "carriers": 2,
+    "phaseShips": 0,
+    "officerQuality": 2,
+    "shipQuality": 3,
+    "numShips": 2,
+
+    "shipSize": 3,
+
+    "aggression": 4,
+
+    "combatFreighterProbability": 0,
+    "combatFreighterCombatUseFraction": 1,
+    "combatFreighterCombatUseFractionWhenPriority": 1,
+    "autofitRandomizeProbability": 0.0,
+    "strictComposition": true, 
+    "commanderSkillsShuffleProbability": 0,
+    "commanderSkills": [
+      "officer_management",
+      "carrier_group",
+      "coordinated_maneuvers",
+      "electronic_warfare"
+    ]
+  },
+  "custom": {
+    "simulatorData": {
+      "showInSimulator": true
+    }
+  },
+  "fleetTypeNames": {
+    "patrolSmall": "Medusa's Head Scout",
+    "patrolMedium": "Medusa's Head Patrol",
+    "patrolLarge": "Medusa's Head Guard"
+  },
+  "illegalCommodities": [],
+  "barSound": "bar_ambience"
+}

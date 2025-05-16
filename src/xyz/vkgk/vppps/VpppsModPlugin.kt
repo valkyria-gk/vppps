@@ -11,6 +11,17 @@ class VpppsModPlugin : BaseModPlugin() {
         var enableFactionPerseanFreeDomain = true;
     }
 
+    override fun onApplicationLoad() {
+        BlueprintInitializerPlugin().initializeBlueprints(Global.getSettings())
+    }
+
+    override fun onGameLoad(newGame: Boolean) {
+        val sectorAPI = Global.getSector()
+        val settingsAPI = Global.getSettings()
+
+        BlueprintInitializerPlugin().syncBlueprintsInGame(sectorAPI, settingsAPI)
+    }
+
     override fun onNewGame() {
         val sectorApi = Global.getSector()
 

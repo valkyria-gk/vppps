@@ -1,0 +1,82 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 9,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "vppps_herongriff",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "vppps_herongriff_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 020": "mjolnir",
+                "WS 019": "mark9",
+                "WS 018": "mark9"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 022": "cyclone"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "squall",
+                "WS 000": "squall"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "pilum",
+                "WS 004": "pilum",
+                "WS 002": "pilum",
+                "WS 005": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "gravitonbeam",
+                "WS 006": "gravitonbeam",
+                "WS 011": "ioncannon",
+                "WS 010": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 021": "heavyburst",
+                "WS 009": "pdburst",
+                "WS 008": "pdburst"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 014": "lightmg",
+                "WS 016": "lightmg",
+                "WS 017": "lightmg",
+                "WS 015": "lightmg",
+                "WS 012": "lightdualmg",
+                "WS 013": "lightdualmg"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing",
+        "broadsword_wing",
+        "perdition_wing"
+    ]
+}

@@ -1,2 +1,3 @@
-name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,desc,desc,desc
 Particle Accelerator,vppps_particle_accelerator,,,,,,,,TRUE,,0,0,0,0,xyz.vkgk.vppps.hullmods.ParticleAccelerator,,,,graphics/hullmods/vppps_particle_accelerator.png
+Large Missile Integration,vppps_lmi,,,,,,,,TRUE,,0,0,0,0,xyz.vkgk.vppps.hullmods.LargeMissileIntegration,Reduces the ordnance point cost of large missile weapons by %s.,Reduces ordnance point cost of large missile weapons.,,graphics/hullmods/ballistics_integration.png

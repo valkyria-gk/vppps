@@ -4,3 +4,6 @@ out
 
 # Garbage created by LibreOffice
 .~lock.*
+
+# Even more garbage, stop it
+*~

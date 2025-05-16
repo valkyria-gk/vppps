@@ -42,42 +42,94 @@
     "pirate": 1
   },
 
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+      "afflicator_d_pirates": 0.0,
+      "conquest": 0.0,
+      "onslaught": 0.0,
+      "astral": 0.0,
+      "buffalo2": 0.0,
+      "condor": 0.0,
+      "mora": 0.0,
+      "hound": 0.0,
+      "hound_p": 0.0,
+
+      "falcon": 0.2,
+			"falcon_p":1.0,
+
+      "hyperion": 0.5,
+      "omen":1.0,
+      "wolf":1.0
+		}
+	},
+
   "shipsWhenImporting": {
-    "tags": [
-      "base_bp",
-      "pirate_bp",
-      "pirates",
-      "LP_bp",
-      "luddic_path",
-      "standard",
-      "ind",
-      "independent"
-    ],
+    "tags": [],
     "hulls": [
-      "enforcer",
-      "hammerhead",
+      "atlas",
+      "buffalo_pirates",
+      "colossus",
+      "crig",
+			"dram",
+      "gemini",
+      "mudskipper",
+      "mule",
+      "nebula",
+			"ox",
+			"phaeton",
+      "starliner",
+      "valkyrie",
+
+      "enforcer_d_pirates",
+			"eradicator_pirates",
+			"falcon_p",
+      "gremlin_d_pirates",
+			"manticore_pirates",
+      "mule_d_pirates",
+      "mudskipper2",
+      "shrike_pirates",
+      "vanguard_pirates",
+
+      "brawler_pather",
+      "gremlin_luddic_path",
+      "lasher_pather",
       "manticore_luddic_path",
-      "eradicator",
-      "sunder"
-    ]
-  },
-  "knownShips": {
-    "tags": [
-      "base_bp",
-      "pirate_bp",
-      "pirates",
-      "LP_bp",
-      "luddic_path",
-      "standard",
-      "ind",
-      "independent"
-    ],
-    "hulls": [
+
+      "afflictor",
+      "anubis",
+      "aurora",
+      "apogee",
+      "brawler",
+      "centurion",
+      "champion",
+      "dominator",
+      "drover",
+      "eagle",
       "enforcer",
-      "hammerhead",
-      "manticore_luddic_path",
       "eradicator",
-      "sunder"
+      "falcon",
+      "fury",
+      "gryphon",
+      "hammerhead",
+      "heron",
+      "hyperion",
+      "medusa",
+      "monitor",
+      "omen",
+      "vigilance",
+      "vanguard",
+      "shade",
+      "shepherd",
+      "shrike",
+      "sunder",
+      "tempest",
+      "wolf",
+
+      "vppps_bishop",
+      "vppps_orangutan",
+      "vppps_balteus"
     ]
   },
 
@@ -226,51 +278,91 @@
 
   "portraits": {
     "standard_male": [
+			"graphics/portraits/portrait_corporate01.png",
+			"graphics/portraits/portrait_corporate03.png",
+			"graphics/portraits/portrait_corporate05.png",
+			"graphics/portraits/portrait_corporate06.png",
+			"graphics/portraits/portrait_corporate08.png",
+			"graphics/portraits/portrait_corporate10.png",
+
       "graphics/portraits/portrait_pirate02.png",
       "graphics/portraits/portrait_pirate03.png",
       "graphics/portraits/portrait_pirate07.png",
       "graphics/portraits/portrait_pirate10.png",
       "graphics/portraits/portrait_pirate11.png",
-
       "graphics/portraits/portrait_pirate12.png",
       "graphics/portraits/portrait_pirate13.png",
       "graphics/portraits/portrait_pirate14.png",
       "graphics/portraits/portrait_pirate15.png",
       "graphics/portraits/portrait_pirate19.png",
-
       "graphics/portraits/portrait_pirate20.png",
+
+			"graphics/portraits/portrait_league01.png",
+			"graphics/portraits/portrait_league02.png",
+			"graphics/portraits/portrait_league03.png",
+			"graphics/portraits/portrait_league06.png",
+			"graphics/portraits/portrait_league07.png",
+			"graphics/portraits/portrait_league09.png",
+			"graphics/portraits/portrait_league11.png",
+			"graphics/portraits/portrait_league13.png",
+      
+			"graphics/portraits/portrait_hegemony02.png",
+			"graphics/portraits/portrait_hegemony12.png",
 
       "graphics/portraits/portrait_mercenary01.png",
       "graphics/portraits/portrait_mercenary03.png",
-
       "graphics/portraits/portrait_mercenary04.png",
       "graphics/portraits/portrait_mercenary06.png",
+      "graphics/portraits/portrait_mercenary08.png",
+      
       "graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait13.png",
       "graphics/portraits/portrait15.png",
       "graphics/portraits/portrait17.png",
       "graphics/portraits/portrait18.png",
       "graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait23.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait26.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait31.png",
       "graphics/portraits/portrait33.png",
+			"graphics/portraits/portrait35.png",
       "graphics/portraits/portrait36.png",
+			"graphics/portraits/portrait38.png",
       "graphics/portraits/portrait40.png",
+      "graphics/portraits/portrait48.png",
+
+      "graphics/portraits/portrait43.png",
+      "graphics/portraits/portrait44.png",
+      "graphics/portraits/portrait45.png",
+      "graphics/portraits/portrait46.png",
+      "graphics/portraits/portrait47.png",
+      "graphics/portraits/portrait49.png",
 
       "graphics/portraits/portrait_luddic00.png",
       "graphics/portraits/portrait_luddic02.png",
       "graphics/portraits/portrait_luddic04.png",
       "graphics/portraits/portrait_luddic05.png",
       "graphics/portraits/portrait_luddic06.png",
+      "graphics/portraits/portrait_luddic08.png",
       "graphics/portraits/portrait_luddic09.png",
       "graphics/portraits/portrait_luddic12.png",
       "graphics/portraits/portrait_luddic13.png",
       "graphics/portraits/portrait_luddic15.png"
     ],
     "standard_female": [
+			"graphics/portraits/portrait_corporate02.png",
+			"graphics/portraits/portrait_corporate04.png",
+			"graphics/portraits/portrait_corporate07.png",
+			"graphics/portraits/portrait_corporate09.png",
+			"graphics/portraits/portrait_corporate11.png",
+
       "graphics/portraits/portrait_pirate01.png",
       "graphics/portraits/portrait_pirate04.png",
       "graphics/portraits/portrait_pirate05.png",
       "graphics/portraits/portrait_pirate06.png",
       "graphics/portraits/portrait_pirate08.png",
-
       "graphics/portraits/portrait_pirate09.png",
       "graphics/portraits/portrait_pirate16.png",
       "graphics/portraits/portrait_pirate17.png",
@@ -278,20 +370,41 @@
       "graphics/portraits/portrait_pirate21.png",
       "graphics/portraits/portrait_pirate22.png",
 
+			"graphics/portraits/portrait_league00.png",
+			"graphics/portraits/portrait_league04.png",
+			"graphics/portraits/portrait_league05.png",
+			"graphics/portraits/portrait_league08.png",
+			"graphics/portraits/portrait_league10.png",
+			"graphics/portraits/portrait_league12.png",
+			"graphics/portraits/portrait_league14.png",
+
+			"graphics/portraits/portrait_hegemony03.png",
+
       "graphics/portraits/portrait_mercenary02.png",
       "graphics/portraits/portrait_mercenary05.png",
       "graphics/portraits/portrait_mercenary07.png",
       "graphics/portraits/portrait_mercenary08.png",
-
+      
+      "graphics/portraits/portrait14.png",
       "graphics/portraits/portrait16.png",
       "graphics/portraits/portrait21.png",
       "graphics/portraits/portrait22.png",
       "graphics/portraits/portrait27.png",
       "graphics/portraits/portrait28.png",
       "graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait32.png",
+			"graphics/portraits/portrait34.png",
       "graphics/portraits/portrait37.png",
       "graphics/portraits/portrait39.png",
+			"graphics/portraits/portrait41.png",
       "graphics/portraits/portrait42.png",
+      
+      "graphics/portraits/portrait43.png",
+      "graphics/portraits/portrait44.png",
+      "graphics/portraits/portrait45.png",
+      "graphics/portraits/portrait46.png",
+      "graphics/portraits/portrait47.png",
+      "graphics/portraits/portrait49.png",
 
       "graphics/portraits/portrait_luddic01.png",
       "graphics/portraits/portrait_luddic03.png",

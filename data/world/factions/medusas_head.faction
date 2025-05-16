@@ -119,44 +119,12 @@
   },
 
   "shipsWhenImporting": {
-    "tags": [
-      "base_bp",
-      "pirate_bp",
-      "pirates",
-      "LP_bp",
-      "luddic_path",
-      "standard",
-      "ind",
-      "independent"
-    ],
-    "hulls": [
-      "enforcer",
-      "hammerhead",
-      "manticore_luddic_path",
-      "eradicator",
-      "sunder",
-      "prometheus2"
-    ]
+    "tags": [],
+    "hulls": []
   },
   "knownShips": {
-    "tags": [
-      "base_bp",
-      "pirate_bp",
-      "pirates",
-      "LP_bp",
-      "luddic_path",
-      "standard",
-      "ind",
-      "independent"
-    ],
-    "hulls": [
-      "enforcer",
-      "hammerhead",
-      "manticore_luddic_path",
-      "eradicator",
-      "sunder",
-      "prometheus2"
-    ]
+    "tags": [],
+    "hulls": []
   },
 
   "priorityShips": {

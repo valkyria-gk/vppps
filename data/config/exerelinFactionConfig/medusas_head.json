@@ -1,0 +1,12 @@
+{
+    "playableFaction":false,
+    "corvusCompatible":true,
+    "spawnAsFactionId":"persean_free_domain",
+    "ngcTooltip":"",
+    "rebelFleetSuffix":"Rogues",
+    "startRelationships":{ "persean_free_domain":1 },
+    
+    "responseFleetName":"Guardian Fleet",
+    
+    "morality":"amoral"
+}

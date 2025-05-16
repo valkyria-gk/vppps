@@ -1,0 +1,180 @@
+{
+  "playableFaction": true,
+  "startingFaction": true,
+  "freeStart": false,
+
+  "corvusCompatible": true,
+  "difficultyString": "hard",
+  "noSyncRelations": false,
+  "raidsFromBases": false,
+  "freeMarket": true,
+
+  "rebelFleetSuffix": "Maraduers",
+
+  "factionIdForHqResponse": "medusas_head",
+
+  "stabilizeCommodities": ["food", "hand_weapons", "supplies"],
+
+  "dispositions": {
+    "hegemony": -25,
+    "persean": -25,
+
+    "sindrian_diktat": -10,
+    "tritachyon": -10,
+    
+    "pirates": 25,
+    "independent": 25,
+    "luddic_path": 25,
+
+    "ironshell": -25,
+    "tahlan_legioinfernalis": 0
+  },
+
+  "factionsLiked": [
+    "luddic_church",
+    "luddic_path",
+    "pirates",
+    "independent",
+
+    "brighton",
+    "commie_clouds",
+    "science_fuckers",
+    "kadur_remnant",
+    "mayasura"
+  ],
+  "factionsDisliked": [
+    "hegemony",
+    "persean",
+    "sindrian_diktat",
+    "tritachyon",
+
+    "ironshell",
+    "uaf",
+    "tahlan_legioinfernalis"
+  ],
+  "factionsNeutral": [
+    "remnant",
+
+    "warhawk_republic"
+  ],
+
+  "startRelationships": {
+    "medusas_head": 1.0
+  },
+  "minRelationships": {
+    "medusas_head": 1.0,
+
+    "independent": -0.65,
+    "luddic_church": -0.65,
+    "luddic_path": -0.65,
+    "pirates": -0.65,
+
+    "commie_clouds": -0.65,
+    "science_fuckers": -0.65,
+    "brighton": -0.65,
+    "kadur_remnant": -0.65
+  },
+
+  "maxRelationships": {
+    "medusas_head": 1.0,
+    "player": 1.0,
+    "pirates": 1.0,
+    "independent": 1.0,
+    "commie_clouds": 1.0,
+    "science_fuckers": 1.0,
+    "brighton": 1.0,
+    "kadur_remnant": 1.0,
+
+    "hegemony": -1.0,
+    "ironshell": -1.0
+  },
+
+  "morality": "amoral",
+
+  "alignments": {
+    "corporate": -1,
+    "hierarchical": -1,
+    "militarist": 1.0,
+    "diplomatic": 0.5,
+    "technocratic": 0.5,
+    "ideological": 1.0
+  },
+
+  "diplomacyTraits": [
+    "anarchist",
+    "foreverwar",
+    "helps_allies",
+    "irredentist",
+    "lowprofile"
+  ],
+
+  "startShipsSolo": [
+    ["swp_alastor_sta"],
+    ["centurion_Starting"],
+    ["wolf_Starting", "kite_Starting"],
+    ["wolf_Starting", "shepherd_Starting"],
+    ["wayfarer_Starting", "kite_Starting"],
+    ["wayfarer_Starting", "shepherd_Starting"],
+    ["uw_scythe_eli"],
+    ["cerberus_d_pirates_Shielded"]
+  ],
+  "startShipsCombatSmall": [
+    ["uw_boar_sta", "uw_tiger_wid", "uw_sidecar_cs"],
+    ["enforcer_d_pirates_Strike", "buffalo2_FS", "hound_d_pirates_Standard"]
+  ],
+  "startShipsTradeSmall": [
+    ["mule_d_pirates_Standard", "uw_venom_shi", "hermes_FS"],
+    ["mule_d_pirates_Standard", "brawler_Assault", "shepherd_Frontier"]
+  ],
+  "startShipsCombatLarge": [
+    ["uw_barbarian_ass", "uw_shark_sta", "uw_scythe_cs"],
+    ["falcon_p_Strike", "enforcer_d_pirates_Strike", "lasher_Standard"]
+  ],
+  "startShipsExplorerLarge": [
+    ["uw_stalker_cs", "buffalo_pirates_Standard", "uw_venom_sta"],
+    [
+      "venture_p_Pirate",
+      "buffalo_pirates_Standard",
+      "cerberus_d_pirates_Standard"
+    ]
+  ],
+  "startShipsCarrierSmall": [
+    ["condor_Attack", "buffalo2_FS", "lasher_Standard"]
+  ],
+  "startShipsCarrierLarge": [
+    [
+      "colossus3_Pirate",
+      "enforcer_d_pirates_Strike",
+      "hound_d_pirates_Standard"
+    ]
+  ],
+  "startShipsSuper": [["uw_venomx_eli"]],
+
+  "startSpecialItems": [
+    [
+      ["pirate_bp", ""],
+      ["LP_bp", ""],
+      ["lowtech_bp", ""],
+      ["midline_bp", ""],
+      ["hightech_bp", ""],
+      ["missile_package", ""]
+    ]
+  ],
+
+  "colonyExpeditionChance": 1,
+  "colonyTargetValuator": "exerelin.campaign.colony.IndustrialColonyTargetValuator",
+  "maxColonyDistance": 25,
+
+  "groundBattleSettings": {
+    "moraleDamageTakenMult": 0.9
+  },
+
+  "defenceStations": [
+    { "ids": ["orbitalstation", "battlestation", "starfortress"] },
+    { "ids": ["orbitalstation_high", "battlestation_high", "starfortress_high"] },
+    {
+      "ids": ["orbitalstation_mid", "battlestation_mid", "starfortress_mid"],
+      "weight": 0.0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+    "raiderFactionId": "persean_free_domain",
+    "onlySpawnWhenVisibleInIntelTab": true,
+    "startEnabled": true,
+    "freePort": true,
+    
+    "spawnNonEventFleets": false,
+    
+    "raiderActivityString": "Free Domain Skrimish",
+    
+    "raiderBaseTypes":{
+        "orbitalstation":1,
+        "orbitalstation_high":1
+    },
+    "raiderBaseConditionsAndIndustries":[
+        "no_atmosphere",
+        "population",
+        "spaceport",
+        "grounddefenses",
+        "militarybase",
+        "orbitalworks"
+    ],
+    "raiderBaseTypeNames":[
+        "Cove"
+    ]
+}

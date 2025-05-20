@@ -10,6 +10,7 @@ import com.fs.starfarer.api.combat.ShipAPI
 import com.fs.starfarer.api.combat.listeners.DamageDealtModifier
 import com.fs.starfarer.api.ui.TooltipMakerAPI
 import com.fs.starfarer.api.util.Misc
+import org.lwjgl.util.vector.Vector2f
 
 const val FLUX_COST_MODIFIER: Float = -15.0f
 const val DAMAGE_BONUS_MODIFIER: Float = 15.0f
@@ -67,11 +68,18 @@ class ParticleAccelerator : BaseHullMod() {
             param: Any?,
             target: CombatEntityAPI?,
             damage: DamageAPI?,
-            point: org.lwjgl.util.vector.Vector2f,
+            point: Vector2f?,
             shieldHit: Boolean
         ): String? {
-            if ((param is DamagingProjectileAPI) && param is BeamAPI) {
+            if (param !is DamagingProjectileAPI && param is BeamAPI) {
                 damage?.isForceHardFlux = true
+
+                if (shieldHit && (target is ShipAPI)) {
+                    val targetMaxFlux = target.maxFlux
+                    val shieldBreakerModifier = 1.0f + targetMaxFlux / 500.0f
+
+                    damage!!.modifier.modifyPercent("particle_accelerator_shield_break", shieldBreakerModifier)
+                }
             }
 
             return null

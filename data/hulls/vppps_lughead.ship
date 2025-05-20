@@ -22,7 +22,7 @@
         {
             "id": "WS 000",
             "size": "SMALL",
-            "type": "BALLISTIC",
+            "type": "HYBRID",
             "mount": "TURRET",
             "arc": 180,
             "angle": -30,
@@ -33,7 +33,7 @@
         {
             "id": "WS 001",
             "size": "SMALL",
-            "type": "BALLISTIC",
+            "type": "HYBRID",
             "mount": "TURRET",
             "arc": 180,
             "angle": 30,
@@ -77,7 +77,7 @@
         {
             "id": "WS 005",
             "size": "SMALL",
-            "type": "BALLISTIC",
+            "type": "HYBRID",
             "mount": "TURRET",
             "arc": 240,
             "angle": 180,
@@ -91,60 +91,60 @@
             "location": [
                 -68, -15
             ],
-            "length": 47.5,
+            "length": 55,
             "width": 16,
             "angle": 180,
-            "contrailSize": 12,
+            "contrailSize": 80,
             "style": "MIDLINE"
         },
         {
             "location": [
                 -68, 15
             ],
-            "length": 47.5,
+            "length": 55,
             "width": 16,
             "angle": 180,
-            "contrailSize": 12,
+            "contrailSize": 80,
             "style": "MIDLINE"
         },
         {
             "location": [
                 -69.5, -26.5
             ],
-            "length": 47.5,
+            "length": 65,
             "width": 16,
             "angle": 180,
-            "contrailSize": 12,
+            "contrailSize": 80,
             "style": "MIDLINE"
         },
         {
             "location": [
                 -69.5, 26.5
             ],
-            "length": 47.5,
+            "length": 65,
             "width": 16,
             "angle": 180,
-            "contrailSize": 12,
+            "contrailSize": 80,
             "style": "MIDLINE"
         },
         {
             "location": [
                 -71, -37
             ],
-            "length": 47.5,
+            "length": 75,
             "width": 16,
             "angle": 180,
-            "contrailSize": 12,
+            "contrailSize": 80,
             "style": "MIDLINE"
         },
         {
             "location": [
                 -71, 37
             ],
-            "length": 47.5,
+            "length": 75,
             "width": 16,
             "angle": 180,
-            "contrailSize": 12,
+            "contrailSize": 80,
             "style": "MIDLINE"
         }
     ],

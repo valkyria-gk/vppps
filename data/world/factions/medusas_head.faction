@@ -132,16 +132,7 @@
     "hulls": []
   },
   "knownFighters": {
-    "tags": [
-      "base_bp",
-      "pirate_bp",
-      "pirates",
-      "LP_bp",
-      "luddic_path",
-      "standard",
-      "ind",
-      "independent"
-    ],
+    "tags": [],
     "fighters": [
       "broadsword_wing",
       "warthog_wing",
@@ -163,19 +154,7 @@
     ]
   },
   "knownWeapons": {
-    "tags": [
-      "base_bp",
-      "lowtech_bp",
-      "midline_bp",
-      "missile_bp",
-      "hightech_bp",
-      "LP_bp",
-      "luddic_path",
-      "pirate_bp",
-      "pirates",
-      "ind",
-      "independent"
-    ],
+    "tags": [],
     "weapons": ["jackhammer", "hurricane", "squall", "locust", "irautolance"]
   },
   "priorityWeapons": {

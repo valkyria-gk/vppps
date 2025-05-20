@@ -2,36 +2,66 @@
     "starSystem": "lilith",
     "markets": [
         {
-            "entities":["sekhmet", "lilith_citadel"],
-			"faction":"persean_free_domain",
-			"size":6,
-            "freePort":true,
-			"startingConditions":[
+            "entities": [
+                "sekhmet",
+                "lilith_citadel"
+            ],
+            "faction": "persean_free_domain",
+            "size": 6,
+            "freePort": true,
+            "startingConditions": [
                 "toxic_atmosphere",
                 "ore_rich",
-				"rare_ore_ultrarich",
+                "rare_ore_ultrarich",
                 "volatiles_diffuse",
                 "organics_trace",
-				"population_6"
-			],
-			"industries":[
+                "population_6"
+            ],
+            "industries": [
                 "population",
-				"spaceport",
+                "spaceport",
                 "mining",
-                ["refining"],
-				["orbitalworks"],
+                [
+                    "refining"
+                ],
+                [
+                    "orbitalworks"
+                ],
                 "highcommand",
                 "medusashead",
                 "heavybatteries",
                 "starfortress_high"
-			]
+            ]
         },
         {
-            "entities": ["lem", "lem_station"],
+            "entities": [
+                "bastet"
+            ],
             "faction": "persean_free_domain",
-            "size":5,
-            "freePort":true,
-            "startingConditions":[
+            "size": 4,
+            "freePort": true,
+            "startingConditions": [
+                "thin_atmosphere",
+                "ore_moderate",
+                "cold",
+                "population_4"
+            ],
+            "industries": [
+                "lightindustry",
+                "heavyindustry",
+                "patrolhq",
+                "heavybatteries"
+            ]
+        },
+        {
+            "entities": [
+                "lem",
+                "lem_station"
+            ],
+            "faction": "persean_free_domain",
+            "size": 5,
+            "freePort": true,
+            "startingConditions": [
                 "habitable",
                 "water_surface",
                 "inimical_biosphere",
@@ -39,7 +69,7 @@
                 "organics_plentiful",
                 "luddic_majority"
             ],
-            "industries":[
+            "industries": [
                 "population",
                 "spaceport",
                 "aquaculture",
@@ -50,24 +80,26 @@
             ]
         },
         {
-            "entities":["strozywei"],
-            "faction":"persean_free_domain",
-            "size":5,
-            "freePort":true,
-            "startingConditions":[
+            "entities": [
+                "strozywei"
+            ],
+            "faction": "persean_free_domain",
+            "size": 5,
+            "freePort": true,
+            "startingConditions": [
                 "habitable",
                 "farmland_adequate",
                 "ore_sparse",
-				"organics_abundant",
-				"population_5",
+                "organics_abundant",
+                "population_5",
                 "luddic_majority",
-				"cold"
+                "cold"
             ],
-            "industries":[
+            "industries": [
                 "population",
                 "spaceport",
                 "farming",
-				"lightindustry",
+                "lightindustry",
                 "heavybatteries",
                 "patrolhq",
                 "orbitalstation_high"

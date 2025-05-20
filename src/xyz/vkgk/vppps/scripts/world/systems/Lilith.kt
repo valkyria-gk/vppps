@@ -5,14 +5,13 @@ import com.fs.starfarer.api.campaign.LocationAPI
 import com.fs.starfarer.api.campaign.SectorAPI
 import com.fs.starfarer.api.campaign.SectorEntityToken
 import com.fs.starfarer.api.campaign.StarSystemAPI
-import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator
 import com.fs.starfarer.api.impl.campaign.ids.Factions
 import com.fs.starfarer.api.impl.campaign.ids.Terrain
-import com.fs.starfarer.api.impl.campaign.procgen.StarAge
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin.AsteroidFieldParams
 import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain
 import com.fs.starfarer.api.impl.campaign.terrain.MagneticFieldTerrainPlugin.MagneticFieldParams
 import xyz.vkgk.vppps.LocalFactionStrings
+import xyz.vkgk.vppps.LocalMarketStrings
 import xyz.vkgk.vppps.scripts.world.LagrangePoint
 import xyz.vkgk.vppps.scripts.world.OrbitHelper
 import xyz.vkgk.vppps.scripts.world.StarSystemGeneratorPlugin
@@ -55,6 +54,13 @@ class Lilith : StarSystemGeneratorPlugin {
         )
         OrbitHelper.placeStableOrbit(planetAbelard, buoy, LagrangePoint.L3, pointingDown = true)
 
+        val innerJump = Global.getFactory().createJumpPoint(
+            "abelard_jump",
+            "Abelard L4 Jump-point"
+        )
+        system.addEntity(innerJump)
+        OrbitHelper.placeStableOrbit(planetAbelard, innerJump, LagrangePoint.L4)
+
         system.addAsteroidBelt(lilithStar, 100, 2400f, 256f, 150f, 250f, Terrain.ASTEROID_BELT, null);
         system.addAsteroidBelt(lilithStar, 100, 2700f, 256f, 150f, 250f, Terrain.ASTEROID_BELT, null);
         system.addAsteroidBelt(lilithStar, 100, 3000f, 128f, 200f, 300f, Terrain.ASTEROID_BELT, null);
@@ -83,7 +89,7 @@ class Lilith : StarSystemGeneratorPlugin {
         sandpaper.setCircularOrbit(lilithStar, 0f, 0f, 90f);
 
         val planetSekhmet = system.addPlanet(
-            "sekhmet",
+            LocalMarketStrings.SEKHMET,
             lilithStar,
             "Sekhmet",
             "toxic",

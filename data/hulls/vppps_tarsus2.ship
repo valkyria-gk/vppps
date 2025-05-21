@@ -1,0 +1,172 @@
+{
+    "hullName": "Tarsus Mk.II",
+    "hullId": "vppps_tarsus2",
+    "hullSize": "DESTROYER",
+    "style": "LOW_TECH",
+    "spriteName": "graphics/ships/tarsus2/vppps_tarsus2.png",
+    "height": 182,
+    "width": 104,
+    "center": [
+        52, 91
+    ],
+    "collisionRadius": 140,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 120,
+    "viewOffset": 0,
+    "builtInMods": [
+        "civgrade",
+        "missleracks"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 250,
+            "angle": 225,
+            "locations": [
+                     -53,      -37
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 250,
+            "angle": 135,
+            "locations": [
+                     -53,       37
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      84,      -19
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      84,       20
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      60,        1
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "MEDIUM",
+            "type": "BALLISTIC",
+            "mount": "TURRET",
+            "arc": 230,
+            "angle": -30,
+            "locations": [
+                      -2,      -20
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -89, 19
+            ],
+            "length": 64,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -89, -19
+            ],
+            "length": 64,
+            "width": 20,
+            "angle": 180,
+            "contrailSize": 64,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -87, 26
+            ],
+            "length": 38,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 44,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -87, -26
+            ],
+            "length": 38,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 44,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -87, 11
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 44,
+            "style": "LOW_TECH"
+        },
+        {
+            "location": [
+                -87, -11
+            ],
+            "length": 30,
+            "width": 8,
+            "angle": 180,
+            "contrailSize": 44,
+            "style": "LOW_TECH"
+        }
+    ],
+    "bounds": [
+           -89.5,       26,
+           -47.5,     50.5,
+              21,     40.5,
+              70,       41,
+              85,       24,
+        
+              63,       10,
+              63,      -10,
+              85,      -24,
+              70,      -41,
+              21,    -40.5,
+        
+           -47.5,    -50.5,
+           -89.5,      -26
+    # 12 points total.
+    ]
+}

@@ -42,6 +42,7 @@ class LostPlanetHolder : StarSystemGeneratorPlugin {
         thePlanet.market.addCondition(Conditions.RARE_ORE_SPARSE)
         thePlanet.market.addCondition(Conditions.VOLATILES_TRACE)
         thePlanet.market.addCondition(Conditions.RUINS_VAST)
-    }
 
+        return system
+    }
 }

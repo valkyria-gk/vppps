@@ -3,6 +3,8 @@ package xyz.vkgk.vppps
 import com.fs.starfarer.api.BaseModPlugin
 import com.fs.starfarer.api.Global
 import com.fs.starfarer.api.campaign.SectorAPI
+import com.fs.starfarer.api.impl.campaign.fleets.PersonalFleetScript
+import com.fs.starfarer.api.impl.campaign.fleets.SDFBase
 import com.fs.starfarer.api.impl.campaign.shared.SharedData
 import xyz.vkgk.vppps.campaign.fleets.DefenceFleetFreeDomain
 import xyz.vkgk.vppps.scripts.world.BanditNebulaPlugin
@@ -43,13 +45,13 @@ class VpppsModPlugin : BaseModPlugin() {
     }
 
     fun ensureFleetScripts(sectorAPI: SectorAPI) {
-        val fleetScripts = arrayOf(
-            DefenceFleetFreeDomain::class.java
+        val fleetScripts: Map<Class<out PersonalFleetScript>, () -> PersonalFleetScript> = mapOf(
+            DefenceFleetFreeDomain::class.java to { DefenceFleetFreeDomain() }
         )
 
         for (fleetScript in fleetScripts) {
-            if (!sectorAPI.hasScript(fleetScript))
-                sectorAPI.addScript(fleetScript.getDeclaredConstructor().newInstance())
+            if (!sectorAPI.hasScript(fleetScript.key))
+                sectorAPI.addScript(fleetScript.value.invoke())
         }
     }
 }

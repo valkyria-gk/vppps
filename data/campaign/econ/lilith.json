@@ -47,6 +47,8 @@
                 "population_4"
             ],
             "industries": [
+                "population",
+                "spaceport",
                 "lightindustry",
                 "heavyindustry",
                 "patrolhq",

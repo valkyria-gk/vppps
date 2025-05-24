@@ -1,22 +1,31 @@
 {
   "id": "persean_free_domain",
-
-  "color": [252, 186, 3, 255],
-
-  "baseUIColor": [252, 186, 3, 255],
-  "secondaryUIColor": [36, 48, 31, 255],
+  "color": [
+    252,
+    186,
+    3,
+    255
+  ],
+  "baseUIColor": [
+    252,
+    186,
+    3,
+    255
+  ],
+  "secondaryUIColor": [
+    36,
+    48,
+    31,
+    255
+  ],
   "secondarySegments": 3,
-
   "displayName": "Persean Domain",
   "displayNameWithArticle": "the Persean Domain",
   "displayNameLong": "Persean Free Domain",
   "displayNameLongWithArticle": "the Persean Free Domain",
-
   "logo": "graphics/factions/persean_free_domain.png",
   "crest": "graphics/factions/crest_persean_free_domain.png",
-
   "tariffFraction": 0.05,
-
   "shipNamePrefix": "",
   "shipNameSources": {
     "SPACE": 1,
@@ -41,29 +50,25 @@
     "luddic": 1,
     "pirate": 1
   },
-
   "hullFrequency": {
     "tags": {},
     "hulls": {
-      "afflicator_d_pirates": 0.0,
-      "conquest": 0.0,
-      "onslaught": 0.0,
-      "astral": 0.0,
-      "buffalo2": 0.0,
-      "condor": 0.0,
-      "mora": 0.0,
-      "hound": 0.0,
-      "hound_p": 0.0,
-
+      "afflicator_d_pirates": 0,
+      "conquest": 0,
+      "onslaught": 0,
+      "astral": 0,
+      "buffalo2": 0,
+      "condor": 0,
+      "mora": 0,
+      "hound": 0,
+      "hound_p": 0,
       "falcon": 0.2,
-      "falcon_p": 1.0,
-
+      "falcon_p": 1,
       "hyperion": 0.5,
-      "omen": 1.0,
-      "wolf": 1.0
+      "omen": 1,
+      "wolf": 1
     }
   },
-
   "shipsWhenImporting": {
     "tags": [],
     "hulls": [
@@ -80,7 +85,6 @@
       "phaeton",
       "starliner",
       "valkyrie",
-
       "enforcer_d_pirates",
       "eradicator_pirates",
       "falcon_p",
@@ -90,12 +94,10 @@
       "mudskipper2",
       "shrike_pirates",
       "vanguard_pirates",
-
       "brawler_pather",
       "gremlin_luddic_path",
       "lasher_pather",
       "manticore_luddic_path",
-
       "afflictor",
       "anubis",
       "aurora",
@@ -126,7 +128,6 @@
       "wolf"
     ]
   },
-
   "priorityShips": {
     "tags": [],
     "hulls": []
@@ -155,7 +156,86 @@
   },
   "knownWeapons": {
     "tags": [],
-    "weapons": ["jackhammer", "hurricane", "squall", "locust", "irautolance"]
+    "weapons": [
+      "lightmg",
+      "lightdualmg",
+      "lightmortar",
+      "vulcan",
+      "lightac",
+      "lightdualac",
+      "lightag",
+      "lightneedler",
+      "railgun",
+      "shredder",
+      "heavymortar",
+      "flak",
+      "arbalest",
+      "dualflak",
+      "chaingun",
+      "heavymauler",
+      "heavyac",
+      "hveldriver",
+      "heavyneedler",
+      "gauss",
+      "hephag",
+      "mark9",
+      "devastator",
+      "mjolnir",
+      "hellbore",
+      "multineedler",
+
+      "reaper",
+      "atropos",
+      "hammer",
+      "swarmer",
+      "heatseeker",
+      "harpoon_single",
+      "breach",
+      "sabot_single",
+      "gorgon",
+      "gazer",
+      "dragon",
+      "gorgonpod",
+      "gazerpod",
+      "breachpod",
+      "sabotpod",
+      "salamanderpod",
+      "annihilatorpod",
+      "pilum",
+      "jackhammer",
+      "typhoon",
+      "cyclone",
+      "pilum_large",
+      "hurricane",
+      "dragonpod",
+      "hydra",
+      "squall",
+      "locust",
+      "hammerrack",
+
+      "mininglaser",
+      "pdlaser",
+      "taclaser",
+      "ioncannon",
+      "irpulse",
+      "lrpdlaser",
+      "pdburst",
+      "amblaster",
+      "phasebeam",
+      "gravitonbeam",
+      "irautolance",
+      "pulselaser",
+      "miningblaster",
+      "heavyblaster",
+      "kineticblaster",
+      "heavyburst",
+      "ionpulser",
+      "plasma",
+      "hil",
+      "autopulse",
+      "guardian",
+      "tachyonlance"
+    ]
   },
   "priorityWeapons": {
     "tags": [],
@@ -177,26 +257,20 @@
       "fluxbreakers"
     ]
   },
-
   "factionDoctrine": {
     "warships": 4,
     "carriers": 2,
     "phaseShips": 1,
-
     "officerQuality": 2,
     "shipQuality": 3,
     "numShips": 2,
-
     "shipSize": 3,
-
     "aggression": 4,
-
     "combatFreighterProbability": 0,
     "combatFreighterCombatUseFraction": 1,
     "combatFreighterCombatUseFractionWhenPriority": 1,
-    "autofitRandomizeProbability": 0.0,
+    "autofitRandomizeProbability": 0,
     "strictComposition": true,
-
     "commanderSkillsShuffleProbability": 0,
     "commanderSkills": [
       "officer_management",
@@ -205,35 +279,28 @@
       "electronic_warfare"
     ]
   },
-
   "custom": {
     "decentralized": true,
-
     "exemptFromFoodShortages": false,
     "allowsTransponderOffTrade": true,
     "offerMissionsWhenHostile": true,
     "willTradeWhenHostile": true,
     "ignoreTradeWithEnemiesForReputation": true,
-
     "buysAICores": true,
     "AICoreValueMult": 0.1,
     "AICoreRepMult": 1,
-
     "engageWhenEvenStrength": true,
     "fightToTheLast": true,
-
     "punitiveExpeditionData": {
       "vsCompetitors": false,
       "vsFreePort": false,
       "canBombard": true,
       "territorial": true
     },
-
     "simulatorData": {
       "showInSimulator": true
     }
   },
-
   "portraits": {
     "standard_male": [
       "graphics/portraits/portrait_corporate01.png",
@@ -242,7 +309,6 @@
       "graphics/portraits/portrait_corporate06.png",
       "graphics/portraits/portrait_corporate08.png",
       "graphics/portraits/portrait_corporate10.png",
-
       "graphics/portraits/portrait_pirate02.png",
       "graphics/portraits/portrait_pirate03.png",
       "graphics/portraits/portrait_pirate07.png",
@@ -254,7 +320,6 @@
       "graphics/portraits/portrait_pirate15.png",
       "graphics/portraits/portrait_pirate19.png",
       "graphics/portraits/portrait_pirate20.png",
-
       "graphics/portraits/portrait_league01.png",
       "graphics/portraits/portrait_league02.png",
       "graphics/portraits/portrait_league03.png",
@@ -263,16 +328,13 @@
       "graphics/portraits/portrait_league09.png",
       "graphics/portraits/portrait_league11.png",
       "graphics/portraits/portrait_league13.png",
-
       "graphics/portraits/portrait_hegemony02.png",
       "graphics/portraits/portrait_hegemony12.png",
-
       "graphics/portraits/portrait_mercenary01.png",
       "graphics/portraits/portrait_mercenary03.png",
       "graphics/portraits/portrait_mercenary04.png",
       "graphics/portraits/portrait_mercenary06.png",
       "graphics/portraits/portrait_mercenary08.png",
-
       "graphics/portraits/portrait12.png",
       "graphics/portraits/portrait13.png",
       "graphics/portraits/portrait15.png",
@@ -290,14 +352,12 @@
       "graphics/portraits/portrait38.png",
       "graphics/portraits/portrait40.png",
       "graphics/portraits/portrait48.png",
-
       "graphics/portraits/portrait43.png",
       "graphics/portraits/portrait44.png",
       "graphics/portraits/portrait45.png",
       "graphics/portraits/portrait46.png",
       "graphics/portraits/portrait47.png",
       "graphics/portraits/portrait49.png",
-
       "graphics/portraits/portrait_luddic00.png",
       "graphics/portraits/portrait_luddic02.png",
       "graphics/portraits/portrait_luddic04.png",
@@ -315,7 +375,6 @@
       "graphics/portraits/portrait_corporate07.png",
       "graphics/portraits/portrait_corporate09.png",
       "graphics/portraits/portrait_corporate11.png",
-
       "graphics/portraits/portrait_pirate01.png",
       "graphics/portraits/portrait_pirate04.png",
       "graphics/portraits/portrait_pirate05.png",
@@ -327,7 +386,6 @@
       "graphics/portraits/portrait_pirate18.png",
       "graphics/portraits/portrait_pirate21.png",
       "graphics/portraits/portrait_pirate22.png",
-
       "graphics/portraits/portrait_league00.png",
       "graphics/portraits/portrait_league04.png",
       "graphics/portraits/portrait_league05.png",
@@ -335,14 +393,11 @@
       "graphics/portraits/portrait_league10.png",
       "graphics/portraits/portrait_league12.png",
       "graphics/portraits/portrait_league14.png",
-
       "graphics/portraits/portrait_hegemony03.png",
-
       "graphics/portraits/portrait_mercenary02.png",
       "graphics/portraits/portrait_mercenary05.png",
       "graphics/portraits/portrait_mercenary07.png",
       "graphics/portraits/portrait_mercenary08.png",
-
       "graphics/portraits/portrait14.png",
       "graphics/portraits/portrait16.png",
       "graphics/portraits/portrait21.png",
@@ -356,14 +411,12 @@
       "graphics/portraits/portrait39.png",
       "graphics/portraits/portrait41.png",
       "graphics/portraits/portrait42.png",
-
       "graphics/portraits/portrait43.png",
       "graphics/portraits/portrait44.png",
       "graphics/portraits/portrait45.png",
       "graphics/portraits/portrait46.png",
       "graphics/portraits/portrait47.png",
       "graphics/portraits/portrait49.png",
-
       "graphics/portraits/portrait_luddic01.png",
       "graphics/portraits/portrait_luddic03.png",
       "graphics/portraits/portrait_luddic07.png",
@@ -374,16 +427,29 @@
       "graphics/portraits/portrait_luddic16.png"
     ]
   },
-
   "ranks": {
     "posts": {
-      "factionLeader": { "name": "Executive Commander" },
-      "patrolCommander": { "name": "Captain" },
-      "fleetCommander": { "name": "Fleet Master" },
-      "baseCommander": { "name": "Base Commander" },
-      "stationCommander": { "name": "Station Commander" },
-      "portmaster": { "name": "Port Chief" },
-      "administrator": { "name": "Ministre Orbis" }
+      "factionLeader": {
+        "name": "Executive Commander"
+      },
+      "patrolCommander": {
+        "name": "Captain"
+      },
+      "fleetCommander": {
+        "name": "Fleet Master"
+      },
+      "baseCommander": {
+        "name": "Base Commander"
+      },
+      "stationCommander": {
+        "name": "Station Commander"
+      },
+      "portmaster": {
+        "name": "Port Chief"
+      },
+      "administrator": {
+        "name": "Ministre Orbis"
+      }
     }
   },
   "voices": {
@@ -401,25 +467,23 @@
       "scientist": 10
     }
   },
-
   "fleetTypeNames": {
     "smallTrader": "Trade Convoy",
     "trade": "Trade Convoy",
     "tradeLiner": "Passenger Convoy",
     "tradeSmuggler": "Smuggler",
-
     "patrolSmall": "Picket",
     "patrolMedium": "Patrol",
     "patrolLarge": "Guard",
-
     "mercScout": "Corsairs",
     "mercBountyHunter": "Raiders",
     "mercPrivateer": "Raiders",
     "mercPatrol": "Attack Fleet",
     "mercArmada": "Armada",
-
     "taskForce": "Strike Fleet"
   },
-  "illegalCommodities": ["organs"],
+  "illegalCommodities": [
+    "organs"
+  ],
   "barSound": "bar_ambience"
 }

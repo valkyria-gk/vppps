@@ -1,0 +1,58 @@
+{
+  "beamEffect": "xyz.vkgk.vppps.combat.GammaRayEffect",
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    255,
+    20,
+    100,
+    255
+  ],
+  "glowColor": [
+    255,
+    75,
+    150,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/gamma_ray/hardpoint_glow.png",
+  "hardpointOffsets": [
+    64,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/gamma_ray/hardpoint_base.png",
+  "hitGlowRadius": 75,
+  "id": "vppps_gamma_ray",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 5,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 300,
+  "textureType": SMOOTH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/gamma_ray/turret_glow.png",
+  "turretOffsets": [
+    45.5,
+    0
+  ],
+  "turretSprite": "graphics/weapons/gamma_ray/turret_base.png",
+  "type": "ENERGY",
+  "width": 40
+}

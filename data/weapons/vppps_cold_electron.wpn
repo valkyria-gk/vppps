@@ -1,0 +1,58 @@
+{
+  "beamEffect": "xyz.vkgk.vppps.combat.ColdElectronEffect",
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    25,
+    125,
+    175,
+    255
+  ],
+  "glowColor": [
+    125,
+    215,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/weapons/cold_electron/hardpoint_glow.png",
+  "hardpointOffsets": [
+    34,
+    0
+  ],
+  "hardpointSprite": "graphics/weapons/cold_electron/hardpoint_base.png",
+  "hitGlowRadius": 0,
+  "id": "vppps_cold_electron",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 2,
+  "size": "MEDIUM",
+  "specClass": "beam",
+  "textureScrollSpeed": 292,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/weapons/cold_electron/turret_glow.png",
+  "turretOffsets": [
+    24,
+    0
+  ],
+  "turretSprite": "graphics/weapons/cold_electron/turret_base.png",
+  "type": "ENERGY",
+  "width": 10
+}

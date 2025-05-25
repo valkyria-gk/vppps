@@ -74,12 +74,12 @@ class ParticleAccelerator : BaseHullMod() {
             if (param !is DamagingProjectileAPI && param is BeamAPI) {
                 damage?.isForceHardFlux = true
 
-                if (shieldHit && (target is ShipAPI)) {
+/*                if (shieldHit && (target is ShipAPI)) {
                     val targetMaxFlux = target.maxFlux
                     val shieldBreakerModifier = 1.0f + targetMaxFlux / 500.0f
 
                     damage!!.modifier.modifyPercent("particle_accelerator_shield_break", shieldBreakerModifier)
-                }
+                }*/
             }
 
             return null

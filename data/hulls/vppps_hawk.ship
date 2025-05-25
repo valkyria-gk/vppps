@@ -1,0 +1,270 @@
+{
+    "hullName": "Hawk",
+    "hullId": "vppps_hawk",
+    "hullSize": "CRUISER",
+    "style": "MIDLINE",
+    "spriteName": "graphics/ships/hawk/vppps_hawk.png",
+    "height": 217,
+    "width": 182,
+    "center": [
+        91, 108.5
+    ],
+    "collisionRadius": 162.5,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 155,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     -15,      -80
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                     -15,       80
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                   101.5,      -26
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "COMPOSITE",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                   101.5,       26
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "LARGE",
+            "type": "BALLISTIC",
+            "mount": "HARDPOINT",
+            "arc": 10,
+            "angle": 0,
+            "locations": [
+                    32.5,        0
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 295,
+            "locations": [
+                    30.5,      -33
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 65,
+            "locations": [
+                    30.5,       33
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 205,
+            "locations": [
+                   -84.5,      -30
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 155,
+            "locations": [
+                   -84.5,       30
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 295,
+            "locations": [
+                    -9.5,      -42
+            ]
+        },
+        {
+            "id": "WS 010",
+            "size": "MEDIUM",
+            "type": "HYBRID",
+            "mount": "TURRET",
+            "arc": 180,
+            "angle": 65,
+            "locations": [
+                    -9.5,       42
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -78,        0,
+                   -81.5,       -8,
+                   -81.5,        8
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -106.5, -20
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -106.5, 20
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -105.5, -31
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -105.5, 31
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -104.5, -41.5
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -104.5, 41.5
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -74.5, -63
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 202.5,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -74.5, 63
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 157.5,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -68.5, -73
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 202.5,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        },
+        {
+            "location": [
+                -68.5, 73
+            ],
+            "length": 80,
+            "width": 16,
+            "angle": 157.5,
+            "contrailSize": 12,
+            "style": "MIDLINE"
+        }
+    ],
+    "bounds": [
+            -106,     46.5,
+             -39,     87.5,
+            97.5,     26.5,
+              51,       11,
+              51,      -11,
+        
+            97.5,    -26.5,
+             -39,    -87.5,
+            -106,    -46.5
+    ]
+}

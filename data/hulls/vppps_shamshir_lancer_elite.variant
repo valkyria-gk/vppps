@@ -1,0 +1,74 @@
+{
+    "displayName": "Lancer",
+    "fluxCapacitors": 17,
+    "fluxVents": 40,
+    "goalVariant": false,
+    "hullId": "vppps_shamshir",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "vppps_shamshir_lancer_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 015": "vppps_gamma_ray",
+                "WS 016": "vppps_gamma_ray",
+                "WS 017": "vppps_gamma_ray"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 014": "vppps_proxymine_large"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "kineticblaster",
+                "WS 003": "kineticblaster",
+                "WS 002": "kineticblaster",
+                "WS 000": "kineticblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "vppps_cold_electron",
+                "WS 004": "vppps_cold_electron",
+                "WS 005": "vppps_cold_electron",
+                "WS 007": "vppps_cold_electron",
+                "WS 008": "vppps_cold_electron",
+                "WS 009": "vppps_cold_electron"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "heavyburst",
+                "WS 013": "dualflak",
+                "WS 011": "dualflak",
+                "WS 010": "dualflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 025": "pdburst",
+                "WS 024": "pdburst",
+                "WS 020": "pdburst",
+                "WS 022": "pdburst",
+                "WS 023": "pdburst",
+                "WS 021": "pdburst",
+                "WS 019": "pdburst",
+                "WS 018": "pdburst"
+            }
+        }
+    ]
+}

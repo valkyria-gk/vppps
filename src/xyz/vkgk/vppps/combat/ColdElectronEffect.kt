@@ -2,12 +2,56 @@ package xyz.vkgk.vppps.combat
 
 import com.fs.starfarer.api.combat.*
 import com.fs.starfarer.api.combat.listeners.AdvanceableListener
+import com.fs.starfarer.api.util.IntervalUtil
 import com.fs.starfarer.api.util.TimeoutTracker
 
 class ColdElectronEffect : BeamEffectPlugin {
+    private val fireInterval = IntervalUtil(0.25f, 1.75f)
     protected var wasZero: Boolean = true
 
-    override fun advance(amount: Float, engine: CombatEngineAPI?, beam: BeamAPI) {
+    fun advanceEmpComponent(amount: Float, engine: CombatEngineAPI, beam: BeamAPI) {
+        val target = beam.getDamageTarget()
+        if (target is ShipAPI && beam.getBrightness() >= 1.0f) {
+            var dur = beam.getDamage().getDpsDuration()
+            if (!this.wasZero) {
+                dur = 0.0f
+            }
+
+            this.wasZero = beam.getDamage().getDpsDuration() <= 0.0f
+            this.fireInterval.advance(dur)
+            if (this.fireInterval.intervalElapsed()) {
+                val ship = target
+                val hitShield = target.getShield() != null && target.getShield().isWithinArc(beam.getRayEndPrevFrame())
+                var pierceChance = target.fluxLevel - 0.1f
+                pierceChance *= ship.getMutableStats().getDynamic().getValue("shield_pierced_mult")
+
+                val piercedShield = hitShield && Math.random().toFloat() < pierceChance
+                if (!hitShield || piercedShield) {
+                    val point = beam.getRayEndPrevFrame()
+                    val emp = beam.getDamage().getFluxComponent() * 1.0f
+                    val dam = beam.getDamage().getDamage() * 1.0f
+                    engine.spawnEmpArcPierceShields(
+                        beam.getSource(),
+                        point,
+                        beam.getDamageTarget(),
+                        beam.getDamageTarget(),
+                        DamageType.ENERGY,
+                        dam,
+                        emp,
+                        100000.0f,
+                        "tachyon_lance_emp_impact",
+                        beam.getWidth() + 9.0f,
+                        beam.getFringeColor(),
+                        beam.getCoreColor()
+                    )
+
+                    VisualEffects.spawnEmpArcEffect(engine, beam)
+                }
+            }
+        }
+    }
+
+    fun advanceShieldSuppressionComponent(amount: Float, engine: CombatEngineAPI, beam: BeamAPI) {
         val target = beam.getDamageTarget()
         if (target is ShipAPI && beam.getBrightness() >= 1.0f && beam.getWeapon() != null) {
             var dur = beam.getDamage().getDpsDuration()
@@ -35,6 +79,15 @@ class ColdElectronEffect : BeamEffectPlugin {
                 }
             }
         }
+    }
+
+    override fun advance(
+        p0: Float,
+        p1: CombatEngineAPI,
+        p2: BeamAPI
+    ) {
+        advanceEmpComponent(p0, p1, p2)
+        advanceShieldSuppressionComponent(p0, p1, p2)
     }
 
     class ColdElectronDamageTaken(protected var ship: ShipAPI) : AdvanceableListener {

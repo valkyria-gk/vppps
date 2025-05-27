@@ -1,0 +1,74 @@
+{
+  "id": "vppps_proxy_mine_shot",
+  "specClass": "projectile",
+  "onFireEffect": "com.fs.starfarer.api.impl.combat.HeavyAdjudicatorEffect",
+  "spawnType": "BALLISTIC",
+  "collisionClass": "PROJECTILE_FF",
+  "collisionClassByFighter": "PROJECTILE_FIGHTER",
+  "length": 350,
+  "hitGlowRadius": 200,
+  "width": 11.5,
+  "fadeTime": 0.2,
+  "fringeColor": [
+    255,
+    100,
+    65,
+    205
+  ],
+  "coreColor": [
+    255,
+    230,
+    155,
+    255
+  ],
+  "textureScrollSpeed": 64,
+  "pixelsPerTexel": 5,
+  "bulletSprite": "graphics/missiles/shell_large_devastator.png",
+  "glowColor": [
+    255,
+    100,
+    65,
+    127
+  ],
+  "glowRadius": 35,
+  "behaviorSpec": {
+    "behavior": "PROXIMITY_FUSE",
+    "shotRangeVariance": 0.2,
+    "range": 80,
+    "explosionSpec": {
+      "duration": 0.12,
+      "radius": 400,
+      "coreRadius": 200,
+      "collisionClass": "PROJECTILE_FF",
+      "collisionClassByFighter": "PROJECTILE_FIGHTER",
+      "particleSizeMin": 7,
+      "particleSizeRange": 4,
+      "particleDuration": 1,
+      "particleCount": 100,
+      "particleColor": [
+        255,
+        100,
+        65,
+        255
+      ],
+      "useDetailedExplosion": true,
+      "useDetailedExplosionColorAlpha": true,
+      "detailedExplosionRadius": 140,
+      "detailedExplosionFlashRadius": 400,
+      "detailedExplosionFlashDuration": 0.25,
+      "detailedExplosionFlashColorFringe": [
+        255,
+        100,
+        65,
+        255
+      ],
+      "detailedExplosionFlashColorCore": [
+        255,
+        100,
+        65,
+        255
+      ],
+      "sound": "heavy_adjudicator_explosion"
+    }
+  }
+}

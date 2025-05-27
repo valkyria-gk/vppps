@@ -1,0 +1,47 @@
+{
+  "animationType": "NONE",
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    31.5,
+    7,
+    31.5,
+    -7
+  ],
+  "hardpointSprite": "graphics/weapons/proxymine_large/hardpoint_base.png",
+  "id": "vppps_proxymine_large",
+  "muzzleFlashSpec": {
+    "length": 80,
+    "spread": 2,
+    "particleSizeMin": 12,
+    "particleSizeRange": 18,
+    "particleDuration": 0.15,
+    "particleCount": 24,
+    "particleColor": [
+      245,
+      215,
+      170,
+      255
+    ]
+  },
+  "projectileSpecId": "vppps_proxy_mine_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": "ROUGH",
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    16,
+    7,
+    16,
+    -7
+  ],
+  "turretSprite": "graphics/weapons/proxymine_large/turret_base.png",
+  "turretUnderSprite": "graphics/weapons/proxymine_large/turret_under.png",
+  "type": "BALLISTIC"
+}

@@ -8,12 +8,18 @@ on:
 jobs:
   verify_code:
     name: Compile
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: "starsector-root/starsector/mods/vppps"
       - name: Setup JDK
         uses: actions/setup-java@v4
+        working-directory: "starsector-root/starsector/mods/vppps"
         with:
           java-version: '17'
+          distribution: 'temurin'
           architecture: x64
           cache: maven
       - name: Setup environment
@@ -23,10 +29,6 @@ jobs:
           unzip starsector.zip -d starsector-root
           wget -O lazylib.zip "https://github.com/LazyWizard/lazylib/releases/download/3.0/LazyLib.3.0.zip"
           unzip lazylib.zip -d starsector-root/starsector/mods
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          path: "starsector-root/starsector/mods/vppps"
       - name: CD
         run: |
           cd ${GITHUB_WORKSPACE}/starsector-root/starsector
@@ -39,9 +41,11 @@ jobs:
           cd vppps
           ls -l .
       - name: Maven
+        working-directory: "starsector-root/starsector/mods/vppps"
         run: mvn --batch-mode --update-snapshots verify
       - name: Upload artifact
         uses: actions/upload-artifact@v4
-        with:
+        working-directory: "starsector-root/starsector/mods/vppps"
+        with:        
           name: JAR
           path: jars

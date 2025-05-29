@@ -19,31 +19,26 @@
             <groupId>FractalWorks</groupId>
             <artifactId>starfarer.api</artifactId>
             <version>local</version>
-            <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
             <version>local</version>
-            <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl.util</artifactId>
             <version>local</version>
-            <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>lazywizard</groupId>
             <artifactId>LazyLib-Kotlin</artifactId>
             <version>local</version>
-            <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>lazywizard</groupId>
             <artifactId>LazyLib</artifactId>
             <version>local</version>
-            <scope>system</scope>
         </dependency>
     </dependencies>
 

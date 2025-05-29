@@ -28,6 +28,7 @@ jobs:
           mvn install:install-file -Dfile=.wget/starsector/lwjgl.jar -DgroupId=org.lwjgl -DartifactId=lwjgl -Dversion=local
           mvn install:install-file -Dfile=.wget/starsector/lwjgl_util.jar -DgroupId=org.lwjgl -DartifactId=lwjgl.util -Dversion=local
       - name: Install LazyLib JARs
+        run: |
           wget -O lazylib.zip "https://github.com/LazyWizard/lazylib/releases/download/3.0/LazyLib.3.0.zip"
           unzip lazylib.zip -d .wget/
           mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local

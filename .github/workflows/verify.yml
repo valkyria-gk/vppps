@@ -31,8 +31,8 @@ jobs:
         run: |
           wget -O lazylib.zip "https://github.com/LazyWizard/lazylib/releases/download/3.0/LazyLib.3.0.zip"
           unzip lazylib.zip -d .wget/
-          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local -Dpackaging=jar
-          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib-Kotlin.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local -Dpackaging=jar
+          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib.jar -DgroupId=LazyWizard -DartifactId=LazyLib-Kotlin -Dversion=local -Dpackaging=jar
+          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib-Kotlin.jar -DgroupId=LazyWizard -DartifactId=LazyLib-Kotlin -Dversion=local -Dpackaging=jar
       - name: Maven
         run: mvn --batch-mode --update-snapshots verify
       - name: Upload artifact

@@ -31,12 +31,12 @@
             <version>local</version>
         </dependency>
         <dependency>
-            <groupId>lazywizard</groupId>
+            <groupId>LazyWizard</groupId>
             <artifactId>LazyLib-Kotlin</artifactId>
             <version>local</version>
         </dependency>
         <dependency>
-            <groupId>lazywizard</groupId>
+            <groupId>LazyWizard</groupId>
             <artifactId>LazyLib</artifactId>
             <version>local</version>
         </dependency>

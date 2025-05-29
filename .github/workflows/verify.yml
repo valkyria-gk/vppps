@@ -3,7 +3,7 @@ name: Verify
 on:
   pull_request:
     branches:
-      - master
+      - latest
 
 jobs:
   verify_code:

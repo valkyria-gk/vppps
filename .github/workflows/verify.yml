@@ -25,9 +25,12 @@ jobs:
         run: |
           sudo apt-get install unzip
           wget -O starsector.zip "https://f005.backblazeb2.com/file/fractalsoftworks/release/starsector_linux-0.98a-RC8.zip"
-          unzip starsector.zip -d starsector-root
+          unzip starsector.zip -d starsector-root/starsector
           wget -O lazylib.zip "https://github.com/LazyWizard/lazylib/releases/download/3.0/LazyLib.3.0.zip"
           unzip lazylib.zip -d starsector-root/starsector/mods
+          cd starsector-root/starsector
+          mv starsector starsector-core
+          mv starsector/mods/LazyLib starsector/mods/lw_lazylib
       - name: CD
         run: |
           cd ${GITHUB_WORKSPACE}/starsector-root/starsector

@@ -24,15 +24,15 @@ jobs:
           sudo apt-get install unzip
           wget -O starsector.zip "https://f005.backblazeb2.com/file/fractalsoftworks/release/starsector_linux-0.98a-RC8.zip"
           unzip starsector.zip -d .wget/
-          mvn install:install-file -Dfile=.wget/starsector/starfarer.api.jar -DgroupId=FractalWorks -DartifactId=starfarer.api -Dversion=local
-          mvn install:install-file -Dfile=.wget/starsector/lwjgl.jar -DgroupId=org.lwjgl -DartifactId=lwjgl -Dversion=local
-          mvn install:install-file -Dfile=.wget/starsector/lwjgl_util.jar -DgroupId=org.lwjgl -DartifactId=lwjgl.util -Dversion=local
+          mvn install:install-file -Dfile=.wget/starsector/starfarer.api.jar -DgroupId=FractalWorks -DartifactId=starfarer.api -Dversion=local -Dpackaging=jar
+          mvn install:install-file -Dfile=.wget/starsector/lwjgl.jar -DgroupId=org.lwjgl -DartifactId=lwjgl -Dversion=local -Dpackaging=jar
+          mvn install:install-file -Dfile=.wget/starsector/lwjgl_util.jar -DgroupId=org.lwjgl -DartifactId=lwjgl.util -Dversion=local -Dpackaging=jar
       - name: Install LazyLib JARs
         run: |
           wget -O lazylib.zip "https://github.com/LazyWizard/lazylib/releases/download/3.0/LazyLib.3.0.zip"
           unzip lazylib.zip -d .wget/
-          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local
-          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib-Kotlin.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local
+          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local -Dpackaging=jar
+          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib-Kotlin.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local -Dpackaging=jar
       - name: Maven
         run: mvn --batch-mode --update-snapshots verify
       - name: Upload artifact

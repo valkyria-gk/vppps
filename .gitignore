@@ -1,4 +1,5 @@
 # Do not commit artefacts or jars to SVC/SCM
+.staging
 jars
 out
 target

@@ -1,10 +1,10 @@
 {
-	"id":"vppps",
+	"id":"vppps_dev",
 	"name":"Valkyria's Pack of Poorly Photoshopped Ships",
 	"author":"valkyria_gothic",
-	"version":"0.0.0",
+	"version":"dev",
 	"description":"",
-	"gameVersion": "0.98a",
+	"gameVersion": "0.98a-RC8",
 	"jars": [
 		"jars/xyz.vkgk.vppps.jar"
 	],

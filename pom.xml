@@ -16,38 +16,33 @@
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
-            <groupId>starsector</groupId>
+            <groupId>FractalWorks</groupId>
             <artifactId>starfarer.api</artifactId>
-            <systemPath>${basedir}/../../starsector-core/starfarer.api.jar</systemPath>
-            <version>.</version>
+            <version>local</version>
             <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
-            <systemPath>${basedir}/../../starsector-core/lwjgl.jar</systemPath>
-            <version>.</version>
+            <version>local</version>
             <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl.util</artifactId>
-            <systemPath>${basedir}/../../starsector-core/lwjgl_util.jar</systemPath>
-            <version>.</version>
+            <version>local</version>
             <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>lazywizard</groupId>
             <artifactId>LazyLib-Kotlin</artifactId>
-            <systemPath>${basedir}/../lw_lazylib/jars/LazyLib-Kotlin.jar</systemPath>
-            <version>.</version>
+            <version>local</version>
             <scope>system</scope>
         </dependency>
         <dependency>
             <groupId>lazywizard</groupId>
             <artifactId>LazyLib</artifactId>
-            <systemPath>${basedir}/../lw_lazylib/jars/LazyLib.jar</systemPath>
-            <version>.</version>
+            <version>local</version>
             <scope>system</scope>
         </dependency>
     </dependencies>

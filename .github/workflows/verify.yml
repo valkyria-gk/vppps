@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          path: "starsector-root/starsector/mods/vppps"
       - name: Setup JDK
         uses: actions/setup-java@v4
         with:
@@ -21,32 +19,23 @@ jobs:
           distribution: 'temurin'
           architecture: x64
           cache: maven
-      - name: Setup environment
+      - name: Install Starsector JARs
         run: |
           sudo apt-get install unzip
           wget -O starsector.zip "https://f005.backblazeb2.com/file/fractalsoftworks/release/starsector_linux-0.98a-RC8.zip"
-          unzip starsector.zip -d starsector-root/starsector
+          unzip starsector.zip -d .wget/
+          mvn install:install-file -Dfile=.wget/starsector/starfarer.api.jar -DgroupId=FractalWorks -DartifactId=starfarer.api -Dversion=local
+          mvn install:install-file -Dfile=.wget/starsector/lwjgl.jar -DgroupId=org.lwjgl -DartifactId=lwjgl -Dversion=local
+          mvn install:install-file -Dfile=.wget/starsector/lwjgl_util.jar -DgroupId=org.lwjgl -DartifactId=lwjgl.util -Dversion=local
+      - name: Install LazyLib JARs
           wget -O lazylib.zip "https://github.com/LazyWizard/lazylib/releases/download/3.0/LazyLib.3.0.zip"
-          unzip lazylib.zip -d starsector-root/starsector/mods
-          cd starsector-root/starsector
-          mv starsector starsector-core
-          mv starsector/mods/LazyLib starsector/mods/lw_lazylib
-      - name: CD
-        run: |
-          cd ${GITHUB_WORKSPACE}/starsector-root/starsector
-          echo "Starsector directory"
-          ls -l .
-          echo "Mods directory"
-          cd mods
-          ls -l .
-          echo "Our directory"
-          cd vppps
-          ls -l .
+          unzip lazylib.zip -d .wget/
+          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local
+          mvn install:install-file -Dfile=.wget/LazyLib/jars/LazyLib-Kotlin.jar -DgroupId=lazylizard -DartifactId=LazyLib-Kotlin -Dversion=local
       - name: Maven
-        working-directory: "starsector-root/starsector/mods/vppps"
         run: mvn --batch-mode --update-snapshots verify
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:        
           name: JAR
-          path: starsector-root/starsector/mods/vppps/jars
+          path: jars

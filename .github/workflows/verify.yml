@@ -16,7 +16,6 @@ jobs:
           path: "starsector-root/starsector/mods/vppps"
       - name: Setup JDK
         uses: actions/setup-java@v4
-        working-directory: "starsector-root/starsector/mods/vppps"
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -45,7 +44,6 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify
       - name: Upload artifact
         uses: actions/upload-artifact@v4
-        working-directory: "starsector-root/starsector/mods/vppps"
         with:        
           name: JAR
-          path: jars
+          path: starsector-root/starsector/mods/vppps/jars

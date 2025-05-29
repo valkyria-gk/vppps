@@ -1,6 +1,7 @@
 # Do not commit artefacts or jars to SVC/SCM
 jars
 out
+target
 
 # Garbage created by LibreOffice
 .~lock.*

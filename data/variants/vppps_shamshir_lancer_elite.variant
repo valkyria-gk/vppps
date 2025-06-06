@@ -1,7 +1,7 @@
 {
     "displayName": "Lancer",
-    "fluxCapacitors": 30,
-    "fluxVents": 7,
+    "fluxCapacitors": 17,
+    "fluxVents": 40,
     "goalVariant": false,
     "hullId": "vppps_shamshir",
     "hullMods": [],

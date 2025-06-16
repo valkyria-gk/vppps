@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.SectorAPI
 import com.fs.starfarer.api.campaign.SectorEntityToken
 import com.fs.starfarer.api.campaign.StarSystemAPI
 import com.fs.starfarer.api.impl.campaign.ids.Factions
+import com.fs.starfarer.api.impl.campaign.ids.Planets
 import com.fs.starfarer.api.impl.campaign.ids.Terrain
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin.AsteroidFieldParams
 import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain
@@ -39,7 +40,7 @@ class Lilith : StarSystemGeneratorPlugin {
             "abelard",
             lilithStar,
             "Abelard",
-            "barren-desert",
+            Planets.BARREN_DESERT,
             20f,
             100f,
             1600f,
@@ -73,6 +74,7 @@ class Lilith : StarSystemGeneratorPlugin {
         system.addRingBand(lilithStar, "misc", "rings_dust0", 256f, 0, Color.white, 256f, 3150f, 80f);
         system.addRingBand(lilithStar, "misc", "rings_dust0", 256f, 1, Color.white, 256f, 3400f, 90f);
         system.addRingBand(lilithStar, "misc", "rings_dust0", 256f, 0, Color.white, 256f, 3500f, 100f);
+        system.addRingBand(lilithStar, "misc", "rings_dust0", 256f, 0, Color.white, 256f, 3600f, 70f);
 
         system.addRingBand(lilithStar, "misc", "rings_asteroids0", 256f, 1, Color.white, 256f, 2700f, 90f)
         system.addRingBand(lilithStar, "misc", "rings_asteroids0", 256f, 3, Color.white, 256f, 3000f, 90f)
@@ -80,7 +82,7 @@ class Lilith : StarSystemGeneratorPlugin {
         val sandpaper = system.addTerrain(
             Terrain.RING,
             BaseRingTerrain.RingParams(
-                1200f + 256,
+                1200f,
                 3000f,
                 null,
                 "The Sandpaper"
@@ -134,7 +136,7 @@ class Lilith : StarSystemGeneratorPlugin {
             "bastet",
             planetSekhmet,
             "Bastet",
-            "barren-desert",
+            Planets.BARREN_DESERT,
             235f,
             50f,
             520f,
@@ -145,7 +147,7 @@ class Lilith : StarSystemGeneratorPlugin {
             "beowulf",
             lilithStar,
             "Beowulf",
-            "gas_giant",
+            Planets.GAS_GIANT,
             230f,
             320f,
             9000f,
@@ -193,7 +195,7 @@ class Lilith : StarSystemGeneratorPlugin {
             "strozywei",
             planetBeowulf,
             "Strozywei",
-            "tundra",
+            Planets.TUNDRA,
             0f,
             120f,
             1200f,
@@ -201,11 +203,21 @@ class Lilith : StarSystemGeneratorPlugin {
         )
         planetStrozywei.spec.tilt = 20f
 
+        val strozyweiStation = system.addCustomEntity(
+            "strozywei_station",
+            "Porto",
+            "station_side02",
+            LocalFactionStrings.PERSEAN_FREE_DOMAIN
+        )
+        strozyweiStation.setInteractionImage("illustrations", "orbital")
+        OrbitHelper.placeStableOrbit(planetStrozywei, strozyweiStation, LagrangePoint.L1, pointingDown = true)
+
+
         var planetLem = system.addPlanet(
             "lem",
             planetBeowulf,
             "Lem",
-            "water",
+            Planets.PLANET_WATER,
             180f,
             90f,
             1600f,
@@ -292,7 +304,7 @@ class Lilith : StarSystemGeneratorPlugin {
             "azazel",
             lilithStar,
             "Azazel",
-            "ice_giant",
+            Planets.ICE_GIANT,
             45f,
             280f,
             13500f,
@@ -304,7 +316,7 @@ class Lilith : StarSystemGeneratorPlugin {
             "jan_mayen",
             planetAzazel,
             "Jan Mayen",
-            "cryovolcanic",
+            Planets.CRYOVOLCANIC,
             0f,
             100f,
             880f,
@@ -362,14 +374,13 @@ class Lilith : StarSystemGeneratorPlugin {
             "plato",
             lilithStar,
             "Plato",
-            "barren",
+            Planets.BARREN,
             0f,
             50f,
             18000f,
             OrbitHelper.calculateOrbitPeriod(18000f),
         )
 
-        system.autogenerateHyperspaceJumpPoints(true, true)
         return system
     }
 }

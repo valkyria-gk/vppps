@@ -17,10 +17,10 @@ class FactionRelationPlugin : SectorGeneratorPlugin {
         perseanDomain.setRelationship(Factions.HEGEMONY, -1.00f)
         perseanDomain.setRelationship(Factions.PERSEAN, -0.65f)
         perseanDomain.setRelationship(Factions.TRITACHYON, RepLevel.INHOSPITABLE)
-        perseanDomain.setRelationship(Factions.LUDDIC_CHURCH, RepLevel.INHOSPITABLE)
-        perseanDomain.setRelationship(Factions.KOL, RepLevel.HOSTILE)
+        perseanDomain.setRelationship(Factions.LUDDIC_CHURCH, RepLevel.SUSPICIOUS)
+        perseanDomain.setRelationship(Factions.KOL, RepLevel.INHOSPITABLE)
         perseanDomain.setRelationship(Factions.LUDDIC_PATH, RepLevel.HOSTILE)
-        perseanDomain.setRelationship(Factions.INDEPENDENT, RepLevel.FAVORABLE)
+        perseanDomain.setRelationship(Factions.INDEPENDENT, RepLevel.SUSPICIOUS)
         perseanDomain.setRelationship(Factions.PIRATES, RepLevel.INHOSPITABLE)
         perseanDomain.setRelationship(Factions.DIKTAT, RepLevel.SUSPICIOUS)
         // Spoiler stuff
@@ -38,8 +38,8 @@ class FactionRelationPlugin : SectorGeneratorPlugin {
         perseanDomain.setRelationship(SupportedModFactionStrings.HMI_FANG, RepLevel.HOSTILE)
         perseanDomain.setRelationship(SupportedModFactionStrings.HMI_DRACO, RepLevel.HOSTILE)
         perseanDomain.setRelationship(SupportedModFactionStrings.HAZARD_MINING, RepLevel.INHOSPITABLE)
-        perseanDomain.setRelationship(SupportedModFactionStrings.LEGION_INFERNALIS, RepLevel.INHOSPITABLE)
+        perseanDomain.setRelationship(SupportedModFactionStrings.LEGION_INFERNALIS, RepLevel.HOSTILE)
         perseanDomain.setRelationship(SupportedModFactionStrings.LEGION_DAEMONS, RepLevel.HOSTILE)
-        perseanDomain.setRelationship(SupportedModFactionStrings.KASSADAR, RepLevel.HOSTILE)
+        perseanDomain.setRelationship(SupportedModFactionStrings.KASSADAR, RepLevel.INHOSPITABLE)
     }
 }

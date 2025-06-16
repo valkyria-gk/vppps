@@ -1,0 +1,64 @@
+{
+  "starSystem": "loki",
+  "markets": [
+    {
+      "entities": ["jesmond"],
+      "faction": "persean_free_domain",
+      "size": 5,
+      "freePort": true,
+      "startingConditions": [
+        "population_5",
+        "ore_moderate",
+        "rare_ore_sparse",
+        "ruins_scattered"
+      ],
+      "industries": [
+        "population",
+        "spaceport",
+        "refining",
+        "orbitalworks",
+        "militarybase",
+        "heavybatteries",
+        "starfortress_high"
+      ]
+    },
+    {
+      "entities": ["odense"],
+      "faction": "independent",
+      "size": 6,
+      "freePort": false,
+      "startingConditions": [
+        "population_6",
+        "ore_moderate",
+        "organics_common",
+        "decivilized_subpop",
+        "ruins_widespread",
+        "luddic_majority"
+      ],
+      "industries": [
+        "population",
+        "megaport",
+        "farming",
+        "lightindustry",
+        "mining",
+        "militarybase",
+        "heavybatteries",
+        "starfortress_high"
+      ]
+    },
+    {
+      "entities": ["krion"],
+      "faction": "persean_free_domain",
+      "size": 4,
+      "freePort": true,
+      "startingConditions": ["population_4", "ore_sparse", "volatiles_diffuse"],
+      "industries": [
+        "population",
+        "spaceport",
+        "mining",
+        "fuelprod",
+        "grounddefenses"
+      ]
+    }
+  ]
+}

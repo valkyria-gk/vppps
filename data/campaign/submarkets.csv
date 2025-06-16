@@ -1,0 +1,3 @@
+id,name,faction,desc,script,icon,order
+medusasheadsubmarket,"Medusa's Head 
+Exchange",medusas_head,"An exclusive supply commissionary of Medusa's Head military, allowing for supply and exchange to its fleets. Access is barred to only the top corp of the Persean Free Domain military, normally speaking.",xyz.vkgk.vppps.campaign.submarkets.MedusasHeadMarketPlugin,,800 

@@ -2,8 +2,8 @@
   "id": "medusas_head",
 
   "color": [252, 186, 3, 255],
-  "baseUIColor": [36, 48, 31, 255],
-  "secondaryUIColor": [252, 186, 3, 255],
+  "baseUIColor": [252, 186, 3, 255],
+  "secondaryUIColor": [36, 48, 31, 255],
   "secondarySegments": 3,
 
   "displayName": "Medusa's Head",

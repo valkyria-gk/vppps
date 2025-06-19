@@ -1,23 +1,8 @@
 {
   "id": "persean_free_domain",
-  "color": [
-    252,
-    186,
-    3,
-    255
-  ],
-  "baseUIColor": [
-    252,
-    186,
-    3,
-    255
-  ],
-  "secondaryUIColor": [
-    36,
-    48,
-    31,
-    255
-  ],
+  "color": [252, 186, 3, 255],
+  "baseUIColor": [252, 186, 3, 255],
+  "secondaryUIColor": [36, 48, 31, 255],
   "secondarySegments": 3,
   "displayName": "Persean Domain",
   "displayNameWithArticle": "the Persean Domain",
@@ -482,8 +467,6 @@
     "mercArmada": "Armada",
     "taskForce": "Strike Fleet"
   },
-  "illegalCommodities": [
-    "organs"
-  ],
+  "illegalCommodities": ["organs"],
   "barSound": "bar_ambience"
 }

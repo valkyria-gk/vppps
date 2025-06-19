@@ -27,6 +27,7 @@ import com.fs.starfarer.api.util.Pair
 import com.fs.starfarer.api.util.WeightedRandomPicker
 import org.lwjgl.util.vector.Vector2f
 import xyz.vkgk.vppps.LocalFactionStrings
+import xyz.vkgk.vppps.LocalSubmarketStrings
 
 class MedusasHeadHQ : BaseIndustry(), RouteFleetSpawner, FleetEventListener {
     protected var tracker: IntervalUtil = IntervalUtil(
@@ -62,6 +63,9 @@ class MedusasHeadHQ : BaseIndustry(), RouteFleetSpawner, FleetEventListener {
             this.supply.clear()
             this.unapply()
         }
+
+        if (!this.market.hasSubmarket(LocalSubmarketStrings.MEDUSAS_HEAD_SUBMARKET))
+            this.market.addSubmarket(LocalSubmarketStrings.MEDUSAS_HEAD_SUBMARKET)
     }
 
     override fun unapply() {
@@ -70,6 +74,9 @@ class MedusasHeadHQ : BaseIndustry(), RouteFleetSpawner, FleetEventListener {
         Misc.setFlagWithReason(memory, "\$patrol", this.getModId(), false, -1.0f)
         Misc.setFlagWithReason(memory, "\$military", this.getModId(), false, -1.0f)
         this.unmodifyStabilityWithBaseMod()
+
+        if (this.market.hasSubmarket(LocalSubmarketStrings.MEDUSAS_HEAD_SUBMARKET))
+            this.market.removeSubmarket(LocalSubmarketStrings.MEDUSAS_HEAD_SUBMARKET)
     }
 
     override fun hasPostDemandSection(hasDemand: Boolean, mode: IndustryTooltipMode?): Boolean {
@@ -94,10 +101,6 @@ class MedusasHeadHQ : BaseIndustry(), RouteFleetSpawner, FleetEventListener {
 
     override fun getStabilityAffectingDeficit(): Pair<String?, Int?>? {
         return this.getMaxDeficit(*arrayOf<String>("supplies", "fuel", "ships", "hand_weapons"))
-    }
-
-    override fun getCurrentImage(): String? {
-        return super.getCurrentImage()
     }
 
     override fun isDemandLegal(com: CommodityOnMarketAPI?): Boolean {

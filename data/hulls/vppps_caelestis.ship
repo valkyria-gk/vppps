@@ -260,7 +260,7 @@
             "size": "MEDIUM",
             "type": "ENERGY",
             "mount": "TURRET",
-            "arc": 0,
+            "arc": 240,
             "angle": 0,
             "locations": [
                      131,        0

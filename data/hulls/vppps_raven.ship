@@ -18,7 +18,7 @@
     "viewOffset": 0,
     "builtInMods": [
         "hbi",
-        "magazines",
+        "vppps_pdi",
         "missleracks"
     ],
     "builtInWings": [],
@@ -164,7 +164,7 @@
             "arc": 0,
             "angle": 90,
             "locations": [
-                     135,      125
+                     135,      124
             ]
         },
         {
@@ -175,7 +175,7 @@
             "arc": 0,
             "angle": -90,
             "locations": [
-                     135,     -125
+                     135,     -124
             ]
         },
         {
@@ -186,7 +186,7 @@
             "arc": 0,
             "angle": 90,
             "locations": [
-                      55,      148
+                      64,      148
             ]
         },
         {
@@ -197,7 +197,7 @@
             "arc": 0,
             "angle": -90,
             "locations": [
-                      55,     -148
+                      64,     -148
             ]
         },
         {

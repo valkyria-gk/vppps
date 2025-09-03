@@ -1,0 +1,77 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 24,
+    "fluxVents": 40,
+    "goalVariant": true,
+    "hullId": "vppps_raven",
+    "hullMods": [
+        "targetingunit"
+    ],
+    "quality": 0.0,
+    "variantId": "vppps_raven_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 018": "cyclone"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 017": "locust",
+                "WS 016": "locust"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 012": "pilum",
+                "WS 014": "pilum",
+                "WS 015": "pilum",
+                "WS 013": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "mark9",
+                "WS 004": "mark9",
+                "WS 006": "hephag",
+                "WS 007": "hephag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "ionbeam",
+                "WS 009": "ionbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "heavyac",
+                "WS 000": "heavyac",
+                "WS 001": "heavyac",
+                "WS 002": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 019": "guardian",
+                "WS 020": "flak",
+                "WS 010": "flak",
+                "WS 011": "flak"
+            }
+        }
+    ]
+}

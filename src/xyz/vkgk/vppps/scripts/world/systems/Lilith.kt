@@ -98,6 +98,12 @@ class Lilith : StarSystemGeneratorPlugin {
             5600f,
             OrbitHelper.calculateOrbitPeriod(5600f),
         )
+        planetSekhmet.spec.glowTexture = Global.getSettings().getSpriteName("hab_glows", "sindria")
+        planetSekhmet.spec.glowColor = Color.WHITE
+        planetSekhmet.spec.isUseReverseLightForGlow = true
+        planetSekhmet.applySpecChanges()
+        planetSekhmet.customDescriptionId = "planet_sekhmet"
+        planetSekhmet.setInteractionImage("illustrations", "vppps_sekhmet")
 
         val sekhmetMagneticField = system.addTerrain(
             Terrain.MAGNETIC_FIELD,
@@ -140,6 +146,8 @@ class Lilith : StarSystemGeneratorPlugin {
             520f,
             120f,
         )
+        planetBastet.customDescriptionId = "planet_bastet"
+        planetBastet.setInteractionImage("illustrations", "vppps_bastet")
 
         val planetBeowulf = system.addPlanet(
             "beowulf",
@@ -200,6 +208,9 @@ class Lilith : StarSystemGeneratorPlugin {
             60f,
         )
         planetStrozywei.spec.tilt = 20f
+        planetStrozywei.applySpecChanges()
+        planetStrozywei.customDescriptionId = "planet_strozywei"
+        planetStrozywei.setInteractionImage("illustrations", "vppps_strozywei")
 
         var planetLem = system.addPlanet(
             "lem",
@@ -211,6 +222,13 @@ class Lilith : StarSystemGeneratorPlugin {
             1600f,
             60f,
         )
+        planetLem.spec.glowTexture = Global.getSettings().getSpriteName("hab_glows", "volturn")
+        planetLem.spec.glowColor = Color.WHITE
+        planetLem.spec.isUseReverseLightForGlow = true
+        planetLem.applySpecChanges()
+        planetLem.customDescriptionId = "planet_lem"
+        planetLem.setInteractionImage("illustrations", "vppps_lem")
+
         val lemStation: SectorEntityToken =
             system.addCustomEntity(
                 "lem_station",

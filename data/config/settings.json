@@ -1,0 +1,10 @@
+{
+    "graphics": {
+        "illustrations": {
+            "vppps_bastet": "graphics/illustrations/desert_moons_ruins.jpg",
+            "vppps_lem": "graphics/illustrations/fikenhild.jpg",
+            "vppps_sekhmet": "graphics/illustrations/vppps_sekhmet.png",
+            "vppps_strozywei": "graphics/illustrations/sentinel2.jpg"
+        }
+    }
+}

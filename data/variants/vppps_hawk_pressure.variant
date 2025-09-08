@@ -1,0 +1,34 @@
+{
+    "displayName": "Pressure",
+    "fluxCapacitors": 20,
+    "fluxVents": 21,
+    "goalVariant": true,
+    "hullId": "vppps_hawk",
+    "hullMods": [
+        "recovery_shuttles"
+    ],
+    "quality": 0.0,
+    "variantId": "vppps_hawk_pressure",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "ionbeam",
+                "WS 000": "ionbeam",
+                "WS 003": "hveldriver",
+                "WS 002": "hveldriver",
+                "WS 010": "arbalest",
+                "WS 009": "arbalest",
+                "WS 006": "lrpdlaser",
+                "WS 004": "lrpdlaser",
+                "WS 008": "lrpdlaser",
+                "WS 007": "lrpdlaser",
+                "WS 005": "hephag"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing"
+    ]
+}

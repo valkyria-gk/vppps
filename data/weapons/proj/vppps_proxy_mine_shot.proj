@@ -1,7 +1,6 @@
 {
   "id": "vppps_proxy_mine_shot",
   "specClass": "projectile",
-  "onFireEffect": "com.fs.starfarer.api.impl.combat.HeavyAdjudicatorEffect",
   "spawnType": "BALLISTIC",
   "collisionClass": "PROJECTILE_FF",
   "collisionClassByFighter": "PROJECTILE_FIGHTER",

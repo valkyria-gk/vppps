@@ -17,6 +17,7 @@
     "shieldRadius": 183.5,
     "viewOffset": 0,
     "builtInMods": [
+        "vppps_pdi",
         "pointdefenseai"
     ],
     "builtInWings": [],

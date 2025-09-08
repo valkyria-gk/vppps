@@ -17,7 +17,7 @@
     "shieldRadius": 250,
     "viewOffset": 0,
     "builtInMods": [
-        "distributed_fire_control",
+        "advancedcore",
         "missleracks",
         "pointdefenseai"
     ],
@@ -30,7 +30,7 @@
             "type": "ENERGY",
             "mount": "TURRET",
             "arc": 210,
-            "angle": 0,
+            "angle": -30,
             "locations": [
                      143,      -91
             ]
@@ -41,7 +41,7 @@
             "type": "ENERGY",
             "mount": "TURRET",
             "arc": 210,
-            "angle": 0,
+            "angle": 30,
             "locations": [
                      143,       91
             ]

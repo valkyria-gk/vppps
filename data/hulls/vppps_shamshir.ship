@@ -19,7 +19,6 @@
     "builtInMods": [
         "advancedcore",
         "autorepair",
-        "coherer",
         "pointdefenseai",
         "vppps_particle_accelerator",
         "solar_shielding"

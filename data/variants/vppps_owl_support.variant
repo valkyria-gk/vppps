@@ -1,0 +1,79 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 50,
+    "fluxVents": 24,
+    "goalVariant": true,
+    "hullId": "vppps_owl",
+    "hullMods": [
+        "turretgyros",
+        "blast_doors",
+        "hardenedshieldemitter"
+    ],
+    "quality": 0.0,
+    "variantId": "vppps_owl_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 016": "hephag",
+                "WS 017": "hephag"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 015": "locust",
+                "WS 014": "locust"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 018": "devastator",
+                "WS 019": "devastator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "heavyac",
+                "WS 000": "heavyac",
+                "WS 001": "heavyac",
+                "WS 005": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "gravitonbeam",
+                "WS 020": "gravitonbeam",
+                "WS 003": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "dualflak",
+                "WS 007": "dualflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "lrpdlaser",
+                "WS 009": "lrpdlaser",
+                "WS 010": "lrpdlaser",
+                "WS 012": "lrpdlaser",
+                "WS 013": "lrpdlaser",
+                "WS 011": "lrpdlaser"
+            }
+        }
+    ]
+}

@@ -1,5 +1,7 @@
 {
-	"starSystemLocations":{
-        "lilith": [3000, 16500]
-    }
+  "starSystemLocations": {
+    "lilith": [3000, 16500],
+    "loki": [2000, 15000],
+    "oleg": [3400, 19200]
+  }
 }

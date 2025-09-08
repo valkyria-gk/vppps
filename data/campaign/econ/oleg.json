@@ -1,0 +1,102 @@
+{
+    "starSystem": "oleg",
+    "markets": [
+        {
+            "entities": [
+                "wum"
+            ],
+            "size": 4,
+            "faction": "persean_free_domain",
+            "freePort": true,
+            "startingConditions": [
+                "habitable",
+                "hot",
+                "farmland_adequate",
+                "ore_moderate",
+                "rare_ore_sparse",
+                "organics_trace",
+                "population_4",
+                "luddic_majority"
+            ],
+            "industries": [
+                "population",
+                "spaceport",
+                "farming",
+                "lightindustry",
+                "grounddefenses",
+                "patrolhq"
+            ]
+        },
+        {
+            "entities": [
+                "tunna",
+                "hink"
+            ],
+            "faction": "luddic_path",
+            "size": 5,
+            "freePort": true,
+            "startingConditions": [
+                "habitable",
+                "farmland_rich",
+                "ore_moderate",
+                "organics_common",
+                "luddic_majority"
+            ],
+            "industries": [
+                "population",
+                "spaceport",
+                "farming",
+                "lightindustry",
+                "heavybatteries",
+                "militarybase",
+                "starfortress"
+            ]
+        },
+        {
+            "entities": [
+                "quincy"
+            ],
+            "faction": "pirates",
+            "size": 4,
+            "freePort": true,
+            "startingConditions": [
+                "habitable",
+                "ore_moderate",
+                "farmland_adequate",
+                "organics_trace",
+                "luddic_majority"
+            ],
+            "industries": [
+                "population",
+                "spaceport",
+                "farming",
+                "heavybatteries",
+                "militarybase"
+            ]
+        },
+        {
+            "entities": [
+                "dalton_station"
+            ],
+            "faction": "pirates",
+            "size": 5,
+            "freePort": true,
+            "startingConditions": [
+                "no_atmosphere",
+                "ore_moderate",
+                "rare_ore_moderate",
+                "volatiles_diffuse"
+            ],
+            "industries": [
+                "population",
+                "megaport",
+                "mining",
+                "refining",
+                "orbitalworks",
+                "heavybatteries",
+                "patrolhq",
+                "starfortress"
+            ]
+        }
+    ]
+}

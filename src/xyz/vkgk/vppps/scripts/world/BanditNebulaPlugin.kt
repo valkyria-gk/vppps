@@ -12,12 +12,16 @@ import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin
 import com.fs.starfarer.api.util.Misc
 import xyz.vkgk.vppps.scripts.world.systems.Lilith
+import xyz.vkgk.vppps.scripts.world.systems.Loki
+import xyz.vkgk.vppps.scripts.world.systems.Oleg
 
 class BanditNebulaPlugin : SectorGeneratorPlugin {
     override fun generate(sectorAPI: SectorAPI) {
         val hyperspace = Global.getSector().hyperspace
         val systems = arrayOf(
-            Lilith().createSystem(sectorAPI, hyperspace)
+            Lilith().createSystem(sectorAPI, hyperspace),
+            Loki().createSystem(sectorAPI, hyperspace),
+            Oleg().createSystem(sectorAPI, hyperspace),
         )
 
         val banditConstellation = Constellation(
@@ -32,6 +36,8 @@ class BanditNebulaPlugin : SectorGeneratorPlugin {
         val nebulaEditor = NebulaEditor(hyperspaceTerrainPlugin)
 
         for (system in systems) {
+            system.autogenerateHyperspaceJumpPoints(true, true)
+
             banditConstellation.systems.add(system)
             system.constellation = banditConstellation
             StarSystemGenerator.addSystemwideNebula(system, StarAge.AVERAGE)

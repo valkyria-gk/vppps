@@ -9,8 +9,14 @@ import com.fs.starfarer.api.campaign.econ.CommodityOnMarketAPI
 import com.fs.starfarer.api.campaign.econ.Industry
 import com.fs.starfarer.api.campaign.econ.Industry.IndustryTooltipMode
 import com.fs.starfarer.api.campaign.listeners.FleetEventListener
+import com.fs.starfarer.api.impl.campaign.econ.Population
 import com.fs.starfarer.api.impl.campaign.econ.impl.BaseIndustry
+import com.fs.starfarer.api.impl.campaign.econ.impl.Farming
+import com.fs.starfarer.api.impl.campaign.econ.impl.HeavyIndustry
+import com.fs.starfarer.api.impl.campaign.econ.impl.LightIndustry
 import com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase
+import com.fs.starfarer.api.impl.campaign.econ.impl.Mining
+import com.fs.starfarer.api.impl.campaign.econ.impl.Refining
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactory.PatrolType
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3
 import com.fs.starfarer.api.impl.campaign.fleets.FleetParamsV3
@@ -28,6 +34,8 @@ import com.fs.starfarer.api.util.WeightedRandomPicker
 import org.lwjgl.util.vector.Vector2f
 import xyz.vkgk.vppps.LocalFactionStrings
 import xyz.vkgk.vppps.LocalSubmarketStrings
+import kotlin.math.max
+import kotlin.math.min
 
 class MedusasHeadHQ : BaseIndustry(), RouteFleetSpawner, FleetEventListener {
     protected var tracker: IntervalUtil = IntervalUtil(
@@ -328,5 +336,26 @@ class MedusasHeadHQ : BaseIndustry(), RouteFleetSpawner, FleetEventListener {
 
     override fun adjustItemDangerLevel(itemId: String?, data: String?, level: RaidDangerLevel): RaidDangerLevel? {
         return level.next()
+    }
+
+    override fun getPatherInterest(): Float {
+        var total = 0.0f
+        for (industry in this.market.industries) {
+            if (industry::class.java in CHECK_PATHER_INTEREST_INDUSTRIES)
+                total += max(0.0f, industry.patherInterest)
+        }
+        return total * -0.5f
+    }
+
+    companion object {
+        val CHECK_PATHER_INTEREST_INDUSTRIES = listOf(
+            Population::class.java,
+            Farming::class.java,
+            Mining::class.java,
+            Refining::class.java,
+            LightIndustry::class.java,
+            HeavyIndustry::class.java,
+            MilitaryBase::class.java,
+        )
     }
 }

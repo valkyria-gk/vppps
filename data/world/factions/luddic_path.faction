@@ -1,0 +1,10 @@
+{
+  "variantOverrides": {
+    "vppps_onslaught_pather_luddic": 30
+  },
+  "hullFrequency": {
+    "hulls": {
+      "vppps_onslaught_pather": 0.5
+    }
+  }
+}

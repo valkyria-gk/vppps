@@ -1,0 +1,72 @@
+{
+    "displayName": "Luddic",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "vppps_onslaught_pather",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "vppps_onslaught_pather_luddic",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 024": "hammerrack",
+                "WS 001": "hammer",
+                "WS 000": "hammer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 023": "hil"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "shredder",
+                "WS 002": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 018": "pulselaser",
+                "WS 019": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 013": "arbalest",
+                "WS 015": "arbalest",
+                "WS 012": "arbalest",
+                "WS 014": "arbalest"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "devastator",
+                "WS 009": "devastator",
+                "WS 016": "flak",
+                "WS 017": "flak",
+                "WS 011": "flak",
+                "WS 010": "flak",
+                "WS 004": "vulcan",
+                "WS 007": "vulcan",
+                "WS 026": "vulcan",
+                "WS 005": "vulcan",
+                "WS 021": "vulcan",
+                "WS 020": "vulcan"
+            }
+        }
+    ]
+}
